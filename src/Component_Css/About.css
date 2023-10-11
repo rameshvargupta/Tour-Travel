@@ -1,0 +1,115 @@
+.sideImage {
+    width: 100%;
+    height: 350px;
+}
+
+.sideImage img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.aboutImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.homeDetails {
+    color: #05203c;
+    line-height: 30px;
+}
+
+.aboutImage {
+    width: 100%;
+    height: 500px;
+}
+
+.cont3 {
+    padding: 20px 10px;
+    background-color: rgb(247, 250, 250);
+}
+
+.custmerDetails {
+    display: flex;
+    padding: 10px;
+}
+
+.custmerDetails img {
+    border-radius: 50px;
+}
+
+.custmerDetails figure {
+
+
+    & figcaption {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    & .country {
+        font-weight: 600;
+    }
+}
+
+.custmerSay {
+    text-align: justify;
+    padding: 10px 50px;
+}
+
+#carouselBtn button {
+    background-color: black;
+}
+
+#NextBtn {
+    background-color: rgba(123, 122, 122, 0.4);
+    border-radius:7px;
+}
+
+
+.totalCustmer {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.teamImage {
+    width: 100%;
+    height: 450px;
+}
+
+.teamImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.teamDetails {
+    line-height: 35px;
+}
+
+.founderDetails {
+    line-height: 35px;
+}
+
+.founderImage {
+    width: 100%;
+    height: 350px;
+}
+
+.founderImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.smallDisplay {
+    display: none;
+}

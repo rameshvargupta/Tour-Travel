@@ -1,0 +1,411 @@
+/* start width less then 1405px */
+@media only screen and (max-width:1405px) {
+  .totalCustmer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custmerSay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+/* end width less then 1405px */
+
+/* //////////////////////////////// */
+
+/* start width less then 1205px */
+@media only screen and (min-width:1206px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:1205px) {
+  .login2 {
+    display: none;
+  }
+
+  .smallcart {
+    display: block;
+    color: white;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+
+
+  .active {
+    border: 1px solid;
+  }
+
+}
+
+@media only screen and (max-width:1198px) and (min-width:992px) {
+
+  .Contact_divideInput #number,
+  #duration,
+  #date {
+    width: 193px;
+  }
+
+  .Contact_form {
+    background-color: #05203c;
+    padding: 17px;
+  }
+
+  .contact_btn button {
+    margin-top: 10px;
+  }
+
+  .contact_btn {
+    margin: -1px;
+  }
+}
+
+/* end width less then 1205px */
+
+/* ///////////////////////////////////////////// */
+
+/* start width less then 1000px */
+
+@media only screen and (max-width:1000px) and (min-width:700px) {
+
+  .textarea2 {
+    margin-left: 18%;
+
+    & textarea {
+      width: 78%;
+    }
+  }
+}
+
+/* end width less then 1000px */
+
+/* /////////////////////////////////////// */
+
+/* start width less then 780px */
+
+
+@media only screen and (max-width:780px) {
+  .totalCustmer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .symbolDetails {
+    display: none;
+  }
+
+  .custmerDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custmerDetails img {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .custmerDetails figure {
+
+
+    & figcaption {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .smallnav img {
+    width: 27px;
+  }
+
+  .bigDisplay {
+    display: none;
+  }
+
+  .smallDisplay {
+    display: block;
+  }
+  .trip {
+    display: flex;
+    width: 100%;
+
+    & .tripName {
+        width: 40%;
+        position: sticky;
+        top: 0px;
+        overflow: scroll;
+        height: 100vh;
+        border: 1px solid red ;
+    }
+
+    & .tripDetails {
+        width: 30%;
+        border: 2px solid red;
+    }
+
+
+}
+
+
+/* * end width less then 780px */
+
+/* //////////////////////////////// */
+
+/* start width less then 650px */
+
+@media only screen and (max-width:650px) {
+  .totalCustmer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custmerDetails {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .custmerDetails img {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .custmerDetails figure {
+
+
+    & figcaption {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    & .name {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  .form {
+    margin-left: 20px;
+  }
+
+ 
+
+}
+
+
+
+
+
+  /* .tourComponent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .placeName {
+    width: 100%;
+    height: 45vh;
+    position: static;
+    overflow-y: scroll;
+  }
+
+  .placeDetails {
+    width: 100%;
+    margin-left: 0%;
+  } */
+
+
+}
+
+/* end width less then 650px */
+
+/* ////////////////////////////////////// */
+
+/* start width less then 550px */
+
+@media only screen and (max-width:550px) {
+
+  .Contact_divideInput input,
+  #duration,
+  #date {
+    width: 160px;
+  }
+
+  .Contact_divideInput2 {
+    margin-left: 20px;
+  }
+
+  .Contact_InnerInput {
+    margin-right: 20px;
+  }
+
+
+  .divideInput input,
+  #duration,
+  #date {
+    width: 160px;
+  }
+
+  .textarea2 {
+    margin-left: 18%;
+
+    & textarea {
+      width: 78%;
+    }
+  }
+
+
+
+
+}
+
+
+/* end width less then 550px */
+
+/* ///////////////////////////////////////// */
+
+
+/* start width less then 450px */
+
+@media only screen and (max-width:450px) {
+
+
+  .form {
+    padding: 5px 0px 5px 10px;
+    right: 10px;
+  }
+
+  .subbtn {
+    width: 50%;
+    text-align: center;
+    margin: 10px auto;
+
+    & button {
+      margin-bottom: 8px;
+    }
+  }
+
+  .divideInput input,
+  #duration,
+  #date {
+    width: 140px;
+  }
+
+  .founderImage,
+  .aboutImage,
+  .contactImage {
+    width: 100%;
+    height: 230px;
+  }
+
+
+  .contactImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .Contact_divideInput input,
+  #duration,
+  #date {
+    width: 140px;
+  }
+
+  .custmerSay {
+    text-align: justify;
+    padding: 10px 10px;
+  }
+
+
+}
+
+/* end width less then 450px */
+/* ////////////////////////////////////////// */
+/* start width less then 350px */
+@media only screen and (max-width:335px) {
+
+
+  .divideInput .InnerInput,
+  .InnerInput2 input {
+    width: 130px;
+  }
+
+  .form {
+    margin-right: -7px;
+  }
+
+  .InnerForm {
+    margin-left: 0px;
+  }
+
+  .Contact_form {
+    padding-left: 20px;
+
+    & .Contact_divideInput {
+      display: flex;
+      flex-direction: column;
+
+      & input {
+        width: 230px;
+      }
+
+      #number,
+      #duration {
+        width: 230px;
+      }
+
+      #date,
+      #tour {
+        width: 230px;
+      }
+
+      #tour {
+        margin-right: 20px;
+      }
+
+      .responsive {
+        margin-left: -20px;
+      }
+    }
+
+    button {
+      padding: 5px 30px;
+    }
+
+  }
+
+  .contact_btn {
+    & .btn {
+      padding: 10px 2px;
+
+    }
+  }
+
+  .textarea2 {
+    margin-left: 0%;
+
+    & textarea {
+      width: 230px;
+    }
+  }
+
+
+
+}
+
+
+/* end width less then 350px */

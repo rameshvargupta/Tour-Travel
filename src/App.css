@@ -1,38 +1,146 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navbar {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  /* background-color:#0d0534; */
+  background-color: #120a39;
+  box-shadow: 0 2px 15px white;
+
+}
+
+.NavStart {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding: 5px;
+  align-items: center;
+  position: relative;
+  align-items: center;
+
+  & .logo img {
+    width: 90px;
+    padding-bottom: 5px;
+  }
+}
+
+#logo2 {
+  color: #2196f3;
+  font-size: 20px;
+
+}
+
+.NavStart a {
+  text-decoration: none;
+}
+
+.login2 {
+  display: flex;
+
+}
+
+.login2 a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  border: 1px solid #120a39;
+  border-radius: 8px;
+}
+
+.login2 a:hover {
+  padding: 8px auto;
+  border-radius: 8px;
+  border: 1px solid;
+  box-shadow: 0 0 5px white;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.login2 .active {
+  border-radius: 8px;
+  border: 1px solid;
+  box-shadow: 0 0 5px white;
+}
+
+.login2 li {
+  list-style: none;
+}
+
+.smallcart {
+  display: none;
+}
+
+
+.AllIcon {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AllIcon img {
+  width: 24px;
+  margin-top: -10px;
+  margin: -5px 10px 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.openbtn {
+  font-size: 20px;
+  border: none;
+  margin: -85px 0 0 160px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -12px;
+  background-color: rgb(243, 243, 243);
+  overflow: hidden;
+  transition: .5s;
+  border: 1px solid rgb(186, 186, 186);
+  padding: 60px 0 0 10px;
+}
+
+.smallnav {
+  margin-top: -26px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.5s;
+}
+
+.sidenav .active {
+  border: 1px solid black;
+}
+
+.sidenav li:hover {
+  background-color:#120a39;
+
+  & a {
+    color: white;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sidenav li {
+  list-style: none;
+  padding: 0px 13px 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.sidenav button {
+  margin-left: 155px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-weight: bold;
 }
