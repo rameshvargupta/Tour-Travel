@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Footer from '../../Component/Footer';
-import '../SouthEastAsia/SouthEastAsia.css';
 import { Link } from 'react-router-dom';
 
 const Africa = () => {
@@ -80,8 +79,8 @@ const Africa = () => {
                 </div>
             </div>
 
-            <div className="southEastAsia">
-                <div className="SthImage">
+            <div className="TopMainImage">
+                <div className="Image">
                     <img className='img-fluid' src="./Images/Africa/AfricamainPage.jpg" alt="" />
                 </div>
 
@@ -89,9 +88,9 @@ const Africa = () => {
 
             </div>
 
-            <div className="SeaTour">
+            <div className="CountryTour">
 
-                <div className="SeaTourName">
+                <div className="CountryTourName">
 
                     <div class="accordion accordion-flush" id="accordionFlushExample" >
 
@@ -129,7 +128,7 @@ const Africa = () => {
 
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed SeaPlaceName" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     Zimbabwe
                                 </button>
                             </h2>
@@ -148,10 +147,11 @@ const Africa = () => {
 
                     </div>
 
+
+
                 </div>
 
-                <div className="SeaTourDetails">
-
+                <div className="CountryTourDetails">
 
                     <div className="container">
 
@@ -168,11 +168,11 @@ const Africa = () => {
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
-                                            <div className="SeaTourImage">
+                                            <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Africa/South Africa.jpg" alt="" />
                                             </div>
 
-                                            <div className="SeaImageDiscription" id='SeaDecription' >
+                                            <div className="CommonImageDiscription" id='SeaDecription' >
                                                 <h5>South African Splendor</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
@@ -187,7 +187,7 @@ const Africa = () => {
                                                     Example: A cable car ride up Table Mountain in Cape Town, taking in panoramic views of the city and ocean, followed by a visit to the historic Robben Island.</div>
                                             </div>
 
-                                            <div className='SeaPlaceName'>South African Splendor</div>
+                                            <div className='CountryPlaceName'>South African Splendor</div>
                                         </div>
 
                                     </div>
@@ -195,11 +195,11 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
-                                            <div className="SeaTourImage">
+                                            <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Africa/Kenya.jpg" alt="" />
                                             </div>
 
-                                            <div className="SeaImageDiscription" id='SeaDecription2' >
+                                            <div className="CommonImageDiscription" id='SeaDecription2' >
                                                 <h5>Safari Spectacular in Kenya</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
@@ -213,7 +213,7 @@ const Africa = () => {
                                                     Example: An early morning hot air balloon ride over the Maasai Mara, watching wildlife from above, followed by a champagne breakfast in the savannah.</div>
                                             </div>
 
-                                            <div className='SeaPlaceName'>Safari Spectacular in Kenya</div>
+                                            <div className='CountryPlaceName'>Safari Spectacular in Kenya</div>
                                         </div>
 
                                     </div>
@@ -221,11 +221,11 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
-                                            <div className="SeaTourImage">
+                                            <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Africa/Zimbabwe.jpg" alt="" />
                                             </div>
 
-                                            <div className="SeaImageDiscription" id='SeaDecription3'>
+                                            <div className="CommonImageDiscription" id='SeaDecription3'>
                                                 <h5>Zimbabwe Magic</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
@@ -240,7 +240,7 @@ const Africa = () => {
 
 
 
-                                            <div className='SeaPlaceName'>Zimbabwe Magic</div>
+                                            <div className='CountryPlaceName'>Zimbabwe Magic</div>
                                         </div>
 
                                     </div>
@@ -263,9 +263,9 @@ const Africa = () => {
                                         <h4>An 11-day tour package in South Africa can offer a diverse range of experiences, from wildlife safaris and cultural encounters to scenic beauty and urban exploration. Here's a sample itinerary for an 11-day tour package in South Africa:</h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
                                             <h4>Arrival in Johannesburg</h4>
                                             <div> <strong>Morning:</strong> Arrive at O.R. Tambo International Airport, transfer to hotel.</div>
@@ -276,26 +276,26 @@ const Africa = () => {
                                     </div>
 
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday1.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday2.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
                                             <h4>Johannesburg City Tour</h4>
@@ -307,9 +307,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
                                             <h4>Johannesburg to Kruger National Park</h4>
                                             <div> <strong>Morning:</strong> Fly or drive to Kruger National Park.</div>
@@ -321,26 +321,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday3.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
                                             <h4>Kruger Safari</h4>
@@ -351,9 +351,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
                                             <h4>Kruger to Cape Town</h4>
                                             <div> <strong>Morning:</strong> Morning game drive or leisure time at the lodge.</div>
@@ -365,24 +365,24 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday6.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
                                             <h4>Cape Peninsula Tour</h4>
@@ -393,9 +393,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
                                             <h4>Cape Winelands</h4>
@@ -406,26 +406,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday7.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday8.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 8</u> </h2>
                                             <h4>Cape Town City and Table Mountain</h4>
                                             <div> <strong>Morning:</strong> Visit Table Mountain.</div>
@@ -437,9 +437,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 9</u> </h2>
                                             <h4>Cape Town to Garden Route</h4>
@@ -450,27 +450,27 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday9.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday10.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 10</u> </h2>
                                             <h4>Tsitsikamma National Park</h4>
@@ -481,9 +481,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 11</u> </h2>
                                             <h4>Return to Johannesburg and Departure</h4>
@@ -494,10 +494,10 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/SAday11.jpg" alt="" />
 
                                         </div>
 
@@ -527,9 +527,9 @@ const Africa = () => {
                                         </h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
                                             <h4>Arrival in Nairobi</h4>
                                             <div> <strong>Morning:</strong> Arrive at Jomo Kenyatta International Airport, transfer to hotel.</div>
@@ -539,26 +539,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday1.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday2.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
                                             <h4>Nairobi City Tour</h4>
@@ -570,9 +570,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
                                             <h4>Amboseli National Park</h4>
                                             <div> <strong>Morning:</strong> Drive to Amboseli National Park.</div>
@@ -584,26 +584,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday3.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
                                             <h4>Amboseli to Lake Nakuru</h4>
@@ -614,9 +614,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
                                             <h4>Lake Nakuru to Maasai Mara</h4>
                                             <div> <strong>Morning:</strong> Game drive in Lake Nakuru National Park.</div>
@@ -628,24 +628,24 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday6.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
                                             <h4>Maasai Mara Safari</h4>
@@ -657,9 +657,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
                                             <h4>Maasai Mara to Lake Naivasha</h4>
@@ -670,26 +670,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday7.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday8.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 8</u> </h2>
                                             <h4>Lake Naivasha and Hell's Gate</h4>
                                             <div> <strong>Morning:</strong> Boat ride on Lake Naivasha.</div>
@@ -700,9 +700,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 9</u> </h2>
                                             <h4>Nairobi to Mombasa</h4>
@@ -713,27 +713,27 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday9.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Kday10.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 10</u> </h2>
                                             <h4>Departure</h4>
@@ -766,9 +766,9 @@ const Africa = () => {
                                         <h4>A 10-day tour package in Zimbabwe can offer a rich blend of wildlife safaris, natural wonders, and cultural experiences. Here's a sample itinerary for a 10-day tour package in Zimbabwe:</h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
                                             <h4>Arrival in Harare</h4>
                                             <div> <strong>Morning:</strong> Arrive at Harare International Airport, transfer to hotel.</div>
@@ -778,26 +778,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday1.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday2.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
                                             <h4>Harare City Tour</h4>
@@ -809,9 +809,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
                                             <h4>Harare to Great Zimbabwe</h4>
                                             <div> <strong>Morning:</strong> Drive to Masvingo.</div>
@@ -823,26 +823,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="../Images/Africa/Zday3.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
                                             <h4>Masvingo to Matobo National Park</h4>
@@ -854,9 +854,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
                                             <h4>Matobo to Hwange National Park</h4>
                                             <div> <strong>Morning:</strong> Drive to Hwange National Park.</div>
@@ -868,24 +868,24 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday6.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
                                             <h4>Hwange Safari</h4>
@@ -897,9 +897,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
                                             <h4>Hwange to Victoria Falls</h4>
@@ -911,26 +911,26 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday7.jpeg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday8.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 8</u> </h2>
                                             <h4>Adventure Activities in Victoria Falls</h4>
                                             <div> <strong>Morning:</strong> Optional activities like bungee jumping or white-water rafting.</div>
@@ -941,9 +941,9 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 9</u> </h2>
                                             <h4>Victoria Falls to Lake Kariba</h4>
@@ -955,27 +955,27 @@ const Africa = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Africa/Zday9.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="../Images/Africa/Zday10.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 10</u> </h2>
                                             <h4>Departure</h4>
@@ -1003,6 +1003,7 @@ const Africa = () => {
                     <div><Footer /></div>
 
                 </div>
+
 
             </div>
 

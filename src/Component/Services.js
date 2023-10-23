@@ -53,6 +53,10 @@ const Services = () => {
                 </div>
             </div>
 
+            <div className="whatsapplogo">
+                <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
+            </div>
+
             <div className="contactMain">
                 <div className="contactImage" data-aos="fade-up">
                     <img src="./Images/andaman.jpg" alt="" />

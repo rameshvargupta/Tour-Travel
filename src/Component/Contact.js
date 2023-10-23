@@ -25,7 +25,7 @@ const Contact = () => {
       <div className="Navbar">
         <div className="container NavStart">
           <Link to={"/"} >  <div className="logo">
-          <img src="./Images/logo.jpg" alt="" />
+            <img src="./Images/logo.jpg" alt="" />
           </div>
           </Link>
 
@@ -55,6 +55,10 @@ const Contact = () => {
         </div>
       </div>
 
+      <div className="whatsapplogo">
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
+      </div>
+
       <div className="contactMain">
         <div className="contactImage" data-aos="fade-up">
           <img src="./Images/contact1.jpg" alt="" />
@@ -62,111 +66,119 @@ const Contact = () => {
       </div>
 
       <div className="container">
-        <h1 className='my-4' style={{ textAlign: "center", color: " #05203c" }}> <u>We Would Love to Hear From You</u></h1>
+        <h1 className='my-5' style={{ textAlign: "center", color: " #05203c" }}> <u>We Would Love to Hear From You</u></h1>
         <div className="row Contact_Main">
 
           <div className="col-sm-12 col-lg-6" data-aos='zoom-in-up'>
 
-            <form action="https://formspree.io/f/meqbjajq"
-              method="POST"
-              className="contact-inputs">
-              <div className="Contact_form mb-3">
 
-                <div className="Contact_divideInput">
-                  <div className='Contact_InnerInput name'>
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" name='Name' required class="form-control" id="name" />
-                  </div>
 
-                  <div className='Contact_InnerInput2'>
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" name='Email' required class="form-control" id="email" />
-                  </div>
+            <form  action="https://formspree.io/f/meqbjajq"
+              method="POST" className='ContactInputData mb-3'>
 
+              <div className="formControl">
+
+                <div className="InputControl">
+                  <label htmlFor="name">Name<span className='mendatary'>*</span></label>
+                  <input type="text" required name='Name' id='name' />
                 </div>
 
-                <div className="Contact_divideInput Contact_divideInput2">
-                  <div className='Contact_InnerInput responsive'>
-                    <label for="number" class="form-label">Contact Number</label>
-                    <input type="text" name='Mobile Number' required class="form-control" id="number" />
-                  </div>
-
-                  <div className='Contact_InnerInput responsive'>
-                    <label for="duration" class="form-label">Duration</label>
-                    <select name="Duration" id="duration" class="form-control">
-                      <option value="">---</option>
-                      <option value="1 Nights">1 Nights</option>
-                      <option value="2 Nights">2 Nights</option>
-                      <option value="3 Nights">3 Nights</option>
-                      <option value="4 Nights">4 Nights</option>
-                      <option value="5 Nights">5 Nights</option>
-                      <option value="6 Nights">6 Nights</option>
-                      <option value="7 Nights">7 Nights</option>
-                      <option value="8 Nights">8 Nights</option>
-                      <option value="9 Nights">9 Nights</option>
-                      <option value="10 Nights Above">10 Nights Above</option>
-                    </select>
-                  </div>
+                <div className="InputControl">
+                  <label htmlFor="email">Email<span className='mendatary'>*</span></label>
+                  <input type="email" required name='Email' id='email' />
                 </div>
-
-                <div className="Contact_divideInput">
-
-                  <div className='Contact_InnerInput date'>
-                    <label for="date" class="form-label">Start Date</label>
-                    <input type="date" name='Date' required class="form-control" id="date" />
-                  </div>
-
-                  <div className='Contact_InnerInput2'>
-                    <label for="number" class="form-label">No. of Adult</label>
-                    <input type="number" name='No. of Adult' required class="form-control" id="number2" />
-                  </div>
-                </div>
-
-                <div className="Contact_divideInput">
-                  <div className='Contact_InnerInput child'>
-                    <label for="number" class="form-label">No. of Children</label>
-                    <input type="number" name='No. of Child' class="form-control" id="number" />
-                  </div>
-
-                  <div className='Contact_InnerInput2'>
-                    <label for="tour" class="form-label">Select Tour</label>
-                    <select name="Tour" id="duration" class="form-control">
-                      <option value="">---</option>
-                      <option value="" disabled id='domestic'>Domestic Tour</option>
-                      <option value="Rishikesh">Rishikesh</option>
-                      <option value="Shimla-Manali">Shimla-Manali</option>
-                      <option value="Kerala">Kerala</option>
-                      <option value="Vaishno Devi-Grand Himanchal">Vaishno Devi-Grand Himanchal</option>
-                      <option value="Uttrakhand">Uttrakhand</option>
-                      <option value="Royal Rajastan">Royal Rajastan</option>
-                      <option value="Himanchal-Vaishno Devi-kasmir Tour">Himanchal-Vaishno Devi-kasmir Tour</option>
-                      <option value="Heritage Rajastan">Heritage Rajastan</option>
-                      <option value="Heavenly Kashmir">Heavenly Kashmir</option>
-                      <option value="Golden Kasmir">Golden Kasmir</option>
-                      <option value="Golden triangle">Golden triangle</option>
-                      <option value="golden Temple-Mata Vaishno Devi-kashmir">golden Temple-Mata Vaishno Devi-kashmir</option>
-                      <option value="Andaman">Andaman</option>
-                      <option value="" disabled id='international'>International Tour</option>
-                      <option value="Singapore">Singapore</option>
-                      <option value="Bali">Bali</option>
-                      <option value="A Week's Escape">A Week's Escape</option>
-                    </select>
-                  </div>
-
-                </div>
-
-                <div className="textarea2">
-                  <label for="textarea" class="form-label">Comment</label><br />
-                  <textarea name="Comment Box" id="textarea" placeholder='Please enter your comment (e.g. age of children and any other specific requirement)' class="form-control" rows="2"></textarea>
-                </div>
-
-                <div className="contact_btn">
-                  <button className='btn btn-primary'>Plan You Trip</button>
-                </div>
-
               </div>
 
+              <div className="formControl">
+
+                <div className="InputControl">
+                  <label htmlFor="Contact">Contact No.<span className='mendatary'>*</span></label>
+                  <input type="text" required name='Mobile Number' id='Contact' />
+                </div>
+
+                <div className="InputControl">
+                  <label htmlFor="">Start Date<span className='mendatary'>*</span></label>
+                  <input type="date" required name='Start Travel Date' id='StyleDuration' />
+                </div>
+              </div>
+
+              <div className="formControl">
+
+                <div className="InputControl">
+                  <label htmlFor="">Duration</label>
+                  <select name="Travel Duration" id="StyleDuration">
+                    <option value="">---</option>
+                    <option value="1 Nights">1 Nights</option>
+                    <option value="2 Nights">2 Nights</option>
+                    <option value="3 Nights">3 Nights</option>
+                    <option value="4 Nights">4 Nights</option>
+                    <option value="5 Nights">5 Nights</option>
+                    <option value="6 Nights">6 Nights</option>
+                    <option value="7 Nights">7 Nights</option>
+                    <option value="8 Nights">8 Nights</option>
+                    <option value="9 Nights">9 Nights</option>
+                    <option value="10 Nights Above">10 Nights Above</option>
+                  </select>
+                </div>
+
+                <div className="InputControl">
+                  <label htmlFor="Adult">No. Of Adult</label>
+                  <input type="text" name='Number Of Adult' id='Adult' />
+                </div>
+              </div>
+
+              <div className="formControl">
+
+                <div className="InputControl">
+                  <label htmlFor="children">No. Of Children </label>
+                  <input type="text" name='Number Of Children' id='children' />
+                </div>
+
+                <div className="InputControl">
+                  <label htmlFor="">Select Tour</label>
+                  <select name="Tour Name" id="StyleDuration">
+                    <option value="">---</option>
+                    <option value="" disabled id='domestic'>Domestic Tour</option>
+                    <option value="Rishikesh">Rishikesh</option>
+                    <option value="Shimla-Manali">Shimla-Manali</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Vaishno Devi-Grand Himanchal">Vaishno Devi-Grand Himanchal</option>
+                    <option value="Uttrakhand">Uttrakhand</option>
+                    <option value="Royal Rajastan">Royal Rajastan</option>
+                    <option value="Himanchal-Vaishno Devi-kasmir Tour">Himanchal-Vaishno Devi-kasmir Tour</option>
+                    <option value="Heritage Rajastan">Heritage Rajastan</option>
+                    <option value="Heavenly Kashmir">Heavenly Kashmir</option>
+                    <option value="Golden Kasmir">Golden Kasmir</option>
+                    <option value="Golden triangle">Golden triangle</option>
+                    <option value="golden Temple-Mata Vaishno Devi-kashmir">golden Temple-Mata Vaishno Devi-kashmir</option>
+                    <option value="Andaman">Andaman</option>
+                    <option value="" disabled id='international'>International Tour</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Bali">Bali</option>
+                    <option value="A Week's Escape">A Week's Escape</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="formControl">
+                <div className="TextAreaControl">
+                  <div className="InputControl">
+                    <label htmlFor="Comment">Comment </label>
+                    <textarea name="Comment Box" id="Comment" placeholder='Please enter your comment (e.g. age of children and any other specific requirement)'></textarea>
+                  </div>
+
+                </div>
+              </div>
+
+              <div className="formControl">
+                <div className="FormButton">
+                  <button>Plan Your Trip</button>
+                </div>
+              </div>
+
+
             </form>
+
           </div>
 
           <div className="col-sm-12 col-lg-6" data-aos='zoom-in-up'>

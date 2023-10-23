@@ -27,7 +27,7 @@ const Home = () => {
       <div className="Navbar">
         <div className="container NavStart">
           <Link to={"/"} >  <div className="logo">
-          <img  src="./Images/logo.jpg" alt="" />
+            <img src="./Images/logo.jpg" alt="" />
           </div>
           </Link>
 
@@ -55,6 +55,10 @@ const Home = () => {
           </div>
 
         </div>
+      </div>
+
+      <div className="whatsapplogo">
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
       </div>
 
       <div className="main">
@@ -93,106 +97,110 @@ const Home = () => {
 
         </div>
 
+
         <form action="https://formspree.io/f/meqbjajq"
-          method="POST"
-          className="contact-inputs">
-          <div className="form">
-            <div className="InnerForm">
-              <div className="divideInput">
-                <div className='InnerInput'>
-                  <label for="name" class="form-label">Name <span className='mendatary'>*</span></label>
-                  <input type="text" name='Name' required class="form-control" id="name" />
-                </div>
+          method="POST" className='TotalInputData'>
 
-                <div className='InnerInput2'>
-                  <label for="email" class="form-label">Email <span className='mendatary'>*</span></label>
-                  <input type="email" name='Email' required class="form-control" id="email" />
-                </div>
+          <div className="formControl">
 
-              </div>
+            <div className="InputControl">
+              <label htmlFor="name">Name<span className='mendatary'>*</span></label>
+              <input type="text" required name='Name' id='name' />
+            </div>
 
-              <div className="divideInput">
-                <div className='InnerInput'>
-                  <label for="number" class="form-label">Contact No. <span className='mendatary'>*</span></label>
-                  <input type="number" name='Mobile Number' required class="form-control" id="number" />
-                </div>
-
-                <div className='InnerInput'>
-
-                  <label for="date" class="form-label">Start Date <span className='mendatary'>*</span></label>
-                  <input type="date" name='Travel Date' required class="form-control" id="date" />
-
-                </div>
-              </div>
-
-              <div className="divideInput">
-
-                <div className='InnerInput'>
-                  <label for="duration" required class="form-label">Duration</label>
-                  <select name="Duration" id="duration" class="form-control">
-                    <option value="">---</option>
-                    <option value="1 Nights">1 Nights</option>
-                    <option value="2 Nights">2 Nights</option>
-                    <option value="3 Nights">3 Nights</option>
-                    <option value="4 Nights">4 Nights</option>
-                    <option value="5 Nights">5 Nights</option>
-                    <option value="6 Nights">6 Nights</option>
-                    <option value="7 Nights">7 Nights</option>
-                    <option value="8 Nights">8 Nights</option>
-                    <option value="9 Nights">9 Nights</option>
-                    <option value="10 Nights Above">10 Nights Above</option>
-                  </select>
-
-                </div>
-
-                <div className='InnerInput2'>
-                  <label for="number" class="form-label">No. of Adult</label>
-                  <input type="text" name='No. of Adult' required class="form-control" id="number" />
-                </div>
-              </div>
-
-              <div className="divideInput">
-                <div className='InnerInput'>
-                  <label for="number" class="form-label">No. of Children</label>
-                  <input type="text" name='No. of Child' class="form-control" id="number" />
-                </div>
-
-                <div className='InnerInput2'>
-                  <label for="tour" class="form-label">Select Tour</label>
-                  <select name="Tour" id="duration" class="form-control">
-                    <option value="">---</option>
-                    <option value="" disabled id='domestic'>Domestic Tour</option>
-                    <option value="Rishikesh">Rishikesh</option>
-                    <option value="Shimla-Manali">Shimla-Manali</option>
-                    <option value="Kerala">Kerala</option>
-                    <option value="Vaishno Devi-Grand Himanchal">Vaishno Devi-Grand Himanchal</option>
-                    <option value="Uttrakhand">Uttrakhand</option>
-                    <option value="Royal Rajastan">Royal Rajastan</option>
-                    <option value="Himanchal-Vaishno Devi-kasmir Tour">Himanchal-Vaishno Devi-kasmir Tour</option>
-                    <option value="Heritage Rajastan">Heritage Rajastan</option>
-                    <option value="Heavenly Kashmir">Heavenly Kashmir</option>
-                    <option value="Golden Kasmir">Golden Kasmir</option>
-                    <option value="Golden triangle">Golden triangle</option>
-                    <option value="golden Temple-Mata Vaishno Devi-kashmir">golden Temple-Mata Vaishno Devi-kashmir</option>
-                    <option value="Andaman">Andaman</option>
-                    <option value="" disabled id='international'>International Tour</option>
-                    <option value="Singapore">Singapore</option>
-                    <option value="Bali">Bali</option>
-                    <option value="A Week's Escape">A Week's Escape</option>
-                  </select>
-
-                </div>
-              </div>
-              <div className="textarea">
-                <label for="textarea" class="form-label">Comment</label><br />
-                <textarea name="Comment Box" id="textarea" placeholder='Please enter your comment (e.g. age of children and any other specific requirement)' class="form-control" rows="2"></textarea>
-              </div>
-
-              <div className="subbtn">
-                <button className='btn btn-primary'>Plan You Trip</button>
-              </div>
+            <div className="InputControl">
+              <label htmlFor="email">Email<span className='mendatary'>*</span></label>
+              <input type="email" required name='Email' id='email' />
             </div>
           </div>
+
+          <div className="formControl">
+
+            <div className="InputControl">
+              <label htmlFor="Contact">Contact No.<span className='mendatary'>*</span></label>
+              <input type="text" required name='Mobile Number' id='Contact' />
+            </div>
+
+            <div className="InputControl">
+              <label htmlFor="">Start Date<span className='mendatary'>*</span></label>
+              <input type="date" required name='Start Travel Date' id='StyleDuration' />
+            </div>
+          </div>
+
+          <div className="formControl">
+
+            <div className="InputControl">
+              <label htmlFor="">Duration</label>
+              <select name="Travel Duration" id="StyleDuration">
+                <option value="">---</option>
+                <option value="1 Nights">1 Nights</option>
+                <option value="2 Nights">2 Nights</option>
+                <option value="3 Nights">3 Nights</option>
+                <option value="4 Nights">4 Nights</option>
+                <option value="5 Nights">5 Nights</option>
+                <option value="6 Nights">6 Nights</option>
+                <option value="7 Nights">7 Nights</option>
+                <option value="8 Nights">8 Nights</option>
+                <option value="9 Nights">9 Nights</option>
+                <option value="10 Nights Above">10 Nights Above</option>
+              </select>
+            </div>
+
+            <div className="InputControl">
+              <label htmlFor="Adult">No. Of Adult</label>
+              <input type="text" name='Number Of Adult' id='Adult' />
+            </div>
+          </div>
+
+          <div className="formControl">
+
+            <div className="InputControl">
+              <label htmlFor="children">No. Of Children </label>
+              <input type="text" name='Number Of Children' id='children' />
+            </div>
+
+            <div className="InputControl">
+              <label htmlFor="">Select Tour</label>
+              <select name="Tour Name" id="StyleDuration">
+                <option value="">---</option>
+                <option value="" disabled id='domestic'>Domestic Tour</option>
+                <option value="Rishikesh">Rishikesh</option>
+                <option value="Shimla-Manali">Shimla-Manali</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Vaishno Devi-Grand Himanchal">Vaishno Devi-Grand Himanchal</option>
+                <option value="Uttrakhand">Uttrakhand</option>
+                <option value="Royal Rajastan">Royal Rajastan</option>
+                <option value="Himanchal-Vaishno Devi-kasmir Tour">Himanchal-Vaishno Devi-kasmir Tour</option>
+                <option value="Heritage Rajastan">Heritage Rajastan</option>
+                <option value="Heavenly Kashmir">Heavenly Kashmir</option>
+                <option value="Golden Kasmir">Golden Kasmir</option>
+                <option value="Golden triangle">Golden triangle</option>
+                <option value="golden Temple-Mata Vaishno Devi-kashmir">golden Temple-Mata Vaishno Devi-kashmir</option>
+                <option value="Andaman">Andaman</option>
+                <option value="" disabled id='international'>International Tour</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Bali">Bali</option>
+                <option value="A Week's Escape">A Week's Escape</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="formControl">
+            <div className="TextAreaControl">
+              <div className="InputControl">
+                <label htmlFor="Comment">Comment </label>
+                <textarea name="Comment Box" id="Comment" placeholder='Please enter your comment (e.g. age of children and any other specific requirement)'></textarea>
+              </div>
+
+            </div>
+          </div>
+
+          <div className="formControl">
+            <div className="FormButton">
+              <button>Plan Your Trip</button>
+            </div>
+          </div>
+
 
         </form>
 
@@ -207,24 +215,24 @@ const Home = () => {
             <div className="homePage">
               <figure>
                 <div className="homeImage">
-                  <img className="img-fluid" src="./Images/rishikesh3.jpg" alt="" />
+                  <img className="img-fluid" src="./Images/India/Golden triangle.jpg" alt="" />
                 </div>
 
                 <figcaption>
                   <div className="country">
-                    <p className='city'>Rishikesh</p>
+                    <p className='city'>Golden Triangle</p>
                     <div>India</div>
                   </div>
                   <hr />
 
                   <div className="homeprice">
                     <div className="prices">
-                      Starting From Rs. 3500
+                      Starting From Rs. 8400
                     </div>
                   </div>
 
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Delhi: Red Fort, Qutub Minar, India Gate Agra: Taj Mahal, Agra Fort Jaipur: Amber Fort, City Palace, Hawa Mahal</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -237,24 +245,24 @@ const Home = () => {
             <div className="homePage">
               <figure>
                 <div className="homeImage">
-                  <img className="img-fluid" src="./Images/vaishno3.jpg" alt="" />
+                  <img className="img-fluid" src="./Images/India/Northeast.jpg" alt="" />
                 </div>
 
                 <figcaption>
                   <div className="country">
-                    <p className='city'>Vaishno Devi</p>
+                    <p className='city'>North-East Explorer</p>
                     <div>India</div>
                   </div>
                   <hr />
 
                   <div className="homeprice">
                     <div className="prices">
-                      Starting From Rs. 4200
+                      Starting From Rs. 9400
                     </div>
                   </div>
 
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Assam: Kaziranga National Park, Majuli Island Meghalaya: Living Root Bridges, Cherrapunji Sikkim: Gangtok, Nathula Pass</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -267,22 +275,22 @@ const Home = () => {
             <div className="homePage">
               <figure>
                 <div className="homeImage">
-                  <img className="img-fluid" src="./Images/manali.jpg" alt="" />
+                  <img className="img-fluid" src="./Images/India/Himachal.jpg" alt="" />
                 </div>
 
                 <figcaption>
                   <div className="country">
-                    <p className='city'>Manali</p>
+                    <p className='city'>North India Highlights</p>
                     <div>India</div>
                   </div>
                   <hr />
                   <div className="homeprice">
                     <div className="prices">
-                      Starting From Rs. 4500
+                      Starting From Rs. 7800
                     </div>
                   </div>
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Amritsar: Golden Temple, Wagah Border Dharamshala: McLeod Ganj, Bhagsu Falls Dalhousie: Khajjiar, Kalatop Wildlife Sanctuary</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -311,7 +319,7 @@ const Home = () => {
                     </div>
                   </div>
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Kochi: Fort Kochi, Chinese fishing nets Alleppey: Houseboat stay in the backwaters Varkala or Kovalam: Beach relaxation</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -339,7 +347,7 @@ const Home = () => {
                     </div>
                   </div>
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Port Blair: Cellular Jail, Corbyn's Cove Beach Havelock Island: Radhanagar Beach, Elephant Beach Neil Island: Natural Bridge, Bharatpur Beach</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -368,7 +376,7 @@ const Home = () => {
                     </div>
                   </div>
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Udaipur: City Palace, Lake Pichola Jodhpur: Mehrangarh Fort, Umaid Bhawan Palace Jaisalmer: Desert Safari, Jaisalmer Fort</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -381,22 +389,22 @@ const Home = () => {
             <div className="homePage">
               <figure>
                 <div className="homeImage">
-                  <img className="img-fluid" src="./Images/uk.jpg" alt="" />
+                  <img className="img-fluid" src="./Images/Africa/Kenya.jpg" alt="" />
                 </div>
 
                 <figcaption>
                   <div className="country">
-                    <p className='city'>Uttarakhand</p>
-                    <div>India</div>
+                    <p className='city'>Kenya</p>
+                    <div>Kenya</div>
                   </div>
                   <hr />
                   <div className="homeprice">
                     <div className="prices">
-                      Starting From Rs. 6800
+                      Starting From Rs. 18000
                     </div>
                   </div>
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Nairobi's Giraffe Centre and David Sheldrick Wildlife Trust Maasai Mara National Reserve for the Great Migration Amboseli National Park.</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -409,22 +417,22 @@ const Home = () => {
             <div className="homePage">
               <figure>
                 <div className="homeImage">
-                  <img className="img-fluid" src="./Images/ladakh.jpg" alt="" />
+                  <img className="img-fluid" src="./Images/SouthEastAsia/Thailand.jpg" alt="" />
                 </div>
 
                 <figcaption>
                   <div className="country">
-                    <p className='city'>Kashmir & Ladakh</p>
-                    <div>India</div>
+                    <p className='city'>Thailand</p>
+                    <div>Thailand</div>
                   </div>
                   <hr />
                   <div className="homeprice">
                     <div className="prices">
-                      Starting From Rs. 8900
+                      Starting From Rs. 21000
                     </div>
                   </div>
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Explore the bustling streets of Bangkok. Visit ancient temples in Chiang Mai. Relax on the beaches of Koh Samui and Phi Phi Islands.</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -437,23 +445,23 @@ const Home = () => {
             <div className="homePage">
               <figure>
                 <div className="homeImage">
-                  <img className="img-fluid" src="./Images/hm.jpg" alt="" />
+                  <img className="img-fluid" src="./Images/MiddleEast/MiddleEastMain.jpg" alt="" />
                 </div>
 
                 <figcaption>
                   <div className="country">
-                    <p className='city'>Himachal Pradesh</p>
-                    <div>India</div>
+                    <p className='city'>Dubai</p>
+                    <div>UAE</div>
                   </div>
 
                   <hr />
                   <div className="homeprice">
                     <div className="prices">
-                      Starting From Rs. 7900
+                      Starting From Rs. 35000
                     </div>
                   </div>
                   <hr />
-                  <p className='homep'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit facere dolor nam maxime. Quidem reiciendis provident debitis libero delectus suscipit!</p>
+                  <p className='homep'>Stand atop the Burj Khalifa. Shop at the Dubai Mall and Gold Souk. Enjoy a desert safari with dune bashing. Visit the Dubai Miracle Garden.</p>
                   <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
                 </figcaption>
@@ -464,7 +472,7 @@ const Home = () => {
 
 
         </div>
-        
+
         {/* <div className="cont2 my-4">
           <h1>FROM PREVIOUS EXPEDITIONS</h1>
           <p>Client Stories – Experiences</p>

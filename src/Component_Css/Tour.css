@@ -98,3 +98,15 @@ svg path:hover {
         background-color: #5C4033;
     }
 }
+
+.mapHeading h1 {
+    color: rgb(108, 108, 108);
+    font-size: 45px;
+}
+
+@media only screen and (max-width:450px) {
+    .mapHeading h1 {
+        color: rgb(108, 108, 108);
+        font-size: 30px;
+    }
+}

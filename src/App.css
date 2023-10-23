@@ -125,7 +125,7 @@
 }
 
 .sidenav li:hover {
-  background-color:#120a39;
+  background-color: #120a39;
 
   & a {
     color: white;
@@ -143,4 +143,27 @@
 
 h1 {
   font-weight: bold;
+}
+
+.whatsapplogo {
+  & img {
+    width: 60px;
+    position: fixed;
+    z-index: 2;
+    bottom: 80px;
+    right: 20px;
+    box-shadow: 5px 7px 10px #120a39;
+    border-radius: 50%;
+  }
+
+  & img:hover {
+    transform: scale(1.1);
+    transition: .6s;
+    cursor: pointer;
+  }
+
+  & img:not(:hover) {
+    transform: scale(1);
+    transition: .4s;
+  }
 }

@@ -1,102 +1,108 @@
-.main {
-    position: relative;
-}
-
-.form {
+.TotalInputData {
     position: absolute;
-    top: 20px;
-    right: 10%;
-    padding: 15px;
-    border-radius: 10px;
+    top: 140px;
+    right: 70px;
     background-color: rgba(176, 175, 175, 0.288);
-}
+    border-radius: 10px;
+    padding: 10px;
 
-.InnerForm {
-    margin-left: 10px;
-}
-
-.textarea {
-    & textarea {
-        border-radius: 10px;
-        padding: 3px;
-        width: 96.5%;
-    }
-
-    & label {
-        color: #05203c;
-        font-weight: 600;
-        font-size: 17px;
-    }
-}
-
-.mendatary {
-    color: red;
-    font-weight: bold;
-}
-
-.divideInput {
-    display: flex;
-    margin-bottom: 10px;
-
-    & label {
-        color: #05203c;
-        font-weight: 600;
-        font-size: 17px;
-    }
-}
-
-#international,
-#domestic {
-    font-weight: bold;
-    font-size: 18px;
-    color: black;
-}
-
-.InnerInput {
-    margin-right: 15px;
-}
-
-#date,
-#duration {
-    width: 205px;
-}
-
-.subbtn {
-    margin: 15px 0;
-    text-align: center;
-}
-
-.subbtn button {
-    width: 96%;
-    margin: 0 0 -15px -18px;
-    font-size: 18px;
-}
-
-.Innerform {
-    text-align: center;
-
-    & h1 {
-        margin-bottom: 20px;
-    }
-
-    & div {
-        font-size: 20px;
-        background-color: #2196f3;
-        display: inline;
-        padding: 10px 20px;
-        border-radius: 10px;
-        cursor: pointer;
+    & .formControl {
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        margin-bottom: 7px;
 
     }
 
-    & div:hover {
-        background-color: #047ee1;
-        transition: .6s;
+    & .InputControl {
+        display: flex;
+        flex-direction: column;
+        margin: auto 10px;
+
+        & input {
+            border-radius: 7px;
+            padding: 3px;
+            outline: none;
+            border: 1px solid rgb(173, 173, 173);
+        }
+
+        & input:focus,
+        #StyleDuration:focus,
+        #Comment:focus {
+            border: 1px solid #007bff;
+
+        }
+
+        & #Comment {
+            border-radius: 7px;
+            outline: none;
+            padding: 7px;
+            border: 1px solid rgb(173, 173, 173);
+        }
+
+        & label {
+            font-weight: 600;
+            color: black;
+            font-size: 17px;
+        }
+
+        & #StyleDuration {
+            width: 190px;
+            padding: 3px;
+            outline: none;
+            border-radius: 7px;
+            border: 1px solid rgb(173, 173, 173);
+        }
+
+        & .mendatary {
+            color: red;
+            font-weight: bold;
+        }
+
+        & #international,
+        #domestic {
+            font-weight: bold;
+            font-size: 18px;
+            color: black;
+        }
+
     }
+
+    & .TextAreaControl {
+        width: 100%;
+    }
+
+    & .FormButton {
+        margin: auto 10px;
+        width: 100%;
+        text-align: center;
+        background-color: #007bff;
+        border-radius: 7px;
+
+        & button {
+            border: none;
+            color: white;
+            background-color: transparent;
+            font-size: 18px;
+            padding: 5px;
+            outline: none;
+
+        }
+
+    }
+
+    .FormButton:hover {
+        background-color: #0548ad;
+        transition: .5s;
+    }
+
 }
 
 .homePage {
     margin-bottom: 20px;
+
     & .homeImage {
         width: 100%;
         height: 180px;

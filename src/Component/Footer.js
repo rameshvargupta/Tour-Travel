@@ -6,7 +6,7 @@ const Footer = () => {
         <div>
             <div className="foot">
                 <div className="row">
-                    <div className="col-sm-6 col-lg-4">
+                    <div className="col-sm-12 col-lg-12">
                         <div className="box6">
                             <h3>Follow Us</h3>
                             <hr />
@@ -19,7 +19,7 @@ const Footer = () => {
 
 
 
-                    <div className="col-sm-6 col-lg-4">
+                    <div className="col-sm-12 col-lg-12">
 
                         <div className="box6">
                             <h3>Terms</h3>
@@ -35,27 +35,15 @@ const Footer = () => {
 
                     </div>
 
-                    <div className="col-sm-6 col-lg-4">
-                        <div className="box6">
-                            <h3>Partner</h3>
-                            <hr />
-                            <ul>
-                                <li><a href="">Booking</a></li>
-                                <li><a href="">Rental Car</a></li>
-                                <li><a href="">Hotel</a></li>
-                                <li><a href="">Trip Advisor</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
+
             <div className="LastFooter">
-                <p>Compare and book affordable Prices © Co Founder <strong>Gautam Thakur</strong> CanvaTrip Ltd 2023 – 2026 <span>
+                <p>Compare and book affordable Prices © Co Founder <strong>Gautam Thakur</strong> Nirvvair Ltd 2023 – 2026 <span>
                 </span></p>
-                <p></p>
             </div>
+
         </div>
     )
 }

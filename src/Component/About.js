@@ -54,6 +54,10 @@ const About = () => {
 
         </div>
       </div>
+      
+      <div className="whatsapplogo">
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
+      </div>
 
       <div className="aboutMain">
         <div className="aboutImage" data-aos="fade-up">

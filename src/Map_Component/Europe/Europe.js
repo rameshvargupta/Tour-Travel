@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import Footer from '../../Component/Footer';
-import '../SouthEastAsia/SouthEastAsia.css';
 import { Link } from 'react-router-dom';
 
 const Europe = () => {
-
     const [selectdetails, setSelectDetails] = useState("defaultshowdetails");
 
     function openNav(e) {
@@ -24,6 +22,23 @@ const Europe = () => {
     function hideDescription() {
         let SeaDecription = document.getElementById("SeaDecription");
         SeaDecription.style.display = "none";
+    }
+
+    function showDescription2() {
+        document.getElementById("SeaDecription2").style.display = "block";
+
+    }
+    function hideDescription2() {
+        document.getElementById("SeaDecription2").style.display = "none";
+
+    }
+
+    function showDescription3() {
+        document.getElementById("SeaDecription3").style.display = "block";
+    }
+    function hideDescription3() {
+        document.getElementById("SeaDecription3").style.display = "none";
+
     }
 
 
@@ -62,32 +77,65 @@ const Europe = () => {
                 </div>
             </div>
 
-            <div className="southEastAsia">
-                <div className="SthImage">
-                    <img className='img-fluid' src="./SouthEastAsia/SeAsiaTop.jpg" alt="" />
+            <div className="TopMainImage">
+                <div className="Image">
+                    <img className='img-fluid' src="./Images/Europe/SAday1.jpg" alt="" />
                 </div>
 
-                <h1>Europe</h1>
-
+                <h1>EUROPE</h1>
             </div>
 
-            <div className="SeaTour">
+            <div className="CountryTour">
 
-                <div className="SeaTourName">
+                <div className="CountryTourName">
 
                     <div class="accordion accordion-flush" id="accordionFlushExample" >
 
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed " onClick={() => setSelectDetails('defaultshowdetails')} type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Europe
+                                    Classic Europe
                                 </button>
                             </h2>
                             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <div className="traveldays">
-                                        <div className='selectDate' onClick={() => setSelectDetails("Europe")} >South Africa Tour</div>
+                                        <div className='selectDate' onClick={() => setSelectDetails("Classic Europe")} >Classic Europe</div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Western European Trio
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    <div className="traveldays">
+                                        <div className='selectDate' onClick={() => setSelectDetails("Western European Trio")} >Western European Trio</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    Switzerland and Austria
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+
+                                    <div className="traveldays">
+                                        <div className='selectDate' onClick={() => setSelectDetails("Switzerland and Austria")} >Switzerland and Austria</div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -98,7 +146,7 @@ const Europe = () => {
 
                 </div>
 
-                <div className="SeaTourDetails">
+                <div className="CountryTourDetails">
 
 
                     <div className="container">
@@ -112,33 +160,96 @@ const Europe = () => {
                                     <h1 className='my-4 text-center'>Our Tours And Packages</h1>
 
 
-                                    <div className="col-12">
+                                    <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
-                                            <div className="SeaTourImage">
-                                                <img className='img-fluid' src="./SouthEastAsia/Thailand.jpg" alt="" />
+                                            <div className="CommonTourImage">
+                                                <img className='img-fluid' src="./Images/Europe/london.jpg" alt="" />
                                             </div>
 
-                                            <div className="SeaImageDiscription" id='SeaDecription' >
-                                                <h5>Thailand Island Hopping</h5>
+                                            <div className="CommonImageDiscription" id='SeaDecription' >
+                                                <h5>Classic Europe (London, Paris, Rome)</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
 
-                                                    10 days.
+                                                    7 days.
                                                 </div>
                                                 <div> <strong>Highlights: </strong>
-                                                    Explore the bustling streets of Bangkok.
-                                                    Visit ancient temples in Chiang Mai.
-                                                    Relax on the beaches of Koh Samui and Phi Phi Islands.
-                                                    Dive in the crystal-clear waters of Koh Tao.
-                                                    Example: A visit to the Grand Palace in Bangkok, followed by a traditional Thai cooking class in the evening.</div>
+                                                    Overwater bungalow stay and Private beach dinner
+                                                    Couples spa treatments and Sunset cruise
+                                                    Private yacht or seaplane transfers
+                                                    Scuba diving or snorkeling excursions
+                                                    Water sports like jet skiing, windsurfing, and parasailing
+                                                </div>
                                             </div>
 
-                                            <div className='SeaPlaceName'>Thailand Island Hopping</div>
+                                            <div className='CountryPlaceName'>Classic Europe (London, Paris, Rome)</div>
                                         </div>
 
                                     </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+
+                                        <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
+                                            <div className="CommonTourImage">
+                                                <img className='img-fluid' src="./Images/Europe/paris.jpg" alt="" />
+                                            </div>
+
+                                            <div className="CommonImageDiscription" id='SeaDecription2' >
+                                                <h5>Paris</h5>
+                                                <div>
+                                                    <strong> Duration: </strong>
+
+                                                    7-10 days.
+                                                </div>
+                                                <div> <strong>Highlights: </strong>
+                                                    Panfilov Park and Zenkov Cathedral
+                                                    Kok-Tobe Hill via cable car
+                                                    Day trip to Big Almaty Lake
+                                                    Medeu Ice Skating Rink and Shymbulak Ski Resort
+                                                    Almaty Central State Museum and Kasteyev Museum of Arts
+                                                    Kazakh Folk Musical Instruments Museum
+                                                    Visit to the Falcon Farm "Sunkar" to see birds of prey
+                                                    .</div>
+                                            </div>
+
+                                            <div className='CountryPlaceName'>Paris Delights</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
+
+                                        <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
+                                            <div className="CommonTourImage">
+                                                <img className='img-fluid' src="./Images/Europe/switzerland.webp" alt="" />
+                                            </div>
+
+                                            <div className="CommonImageDiscription" id='SeaDecription3'>
+                                                <h5>Nature and Culture (Switzerland and Austria)</h5>
+                                                <div>
+                                                    <strong> Duration: </strong>
+
+                                                    5-7 days.
+                                                </div>
+                                                <div> <strong>Highlights: </strong>
+                                                    Amir Timur Square and Museum
+                                                    Khast Imam Complex, Tashkent Metro tour and Chorsu Bazaar
+                                                    Day trip to Charvak Lake and Chimgan Mountains
+                                                    Visit to the ancient city of Samarkand
+                                                    Independence Square and Tashkent Tower
+                                                    Shopping at Samarkand Darvoza Mall
+                                                    Traditional Uzbek dinner with folk music</div>
+                                            </div>
+
+
+
+                                            <div className='CountryPlaceName'>Nature and Culture (Switzerland and Austria)</div>
+                                        </div>
+
+                                    </div>
+
 
                                 </div>
 
@@ -146,245 +257,515 @@ const Europe = () => {
 
                         </div>
 
-                        <div className="EuropeDetails" style={{ display: selectdetails === "Europe" ? "block" : "none" }}>
+                        <div className="ClassicEuropeDetails" style={{ display: selectdetails === "Classic Europe" ? "block" : "none" }}>
 
                             <div className="container my-4">
 
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Europe Discovery</u></h2>
-                                        <h4>A 10-day tour of Europe can offer a rich blend of cultural, historical, and natural experiences. Here's a sample itinerary for a 10-day tour package in Vietnam:</h4>
+                                        <h2><u>Classic Europe (London, Paris, Rome)</u></h2>
+                                        <h4>A 7-day tour package in the Classic Europe can offer a perfect blend of relaxation, adventure, and luxury. Here's a sample itinerary for a 7-day tour package in the Classic Europe:</h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
-                                            <h4>Arrival in Hanoi</h4>
-                                            <div> <strong>Morning:</strong> Arrive at Noi Bai International Airport, transfer to hotel.</div>
-                                            <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
-                                            <div> <strong>Evening:</strong> Explore the Old Quarter and enjoy a traditional Water Puppet Show.</div>
-                                        </div>
-
-                                    </div>
-
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                            <h4>Arrival in London</h4>
+                                            <div> <strong>Morning:</strong> Arrive at Heathrow Airport, transfer to hotel.</div>
+                                            <div> <strong>Afternoon:</strong> Arrive at Heathrow Airport, transfer to hotel.</div>
+                                            <div> <strong>Evening:</strong> Thames River Cruise.</div>
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/CEday1.jpg" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/CEday2.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
-                                            <h4>Hanoi City Tour</h4>
-                                            <div> <strong>Morning:</strong> Visit Ho Chi Minh Mausoleum and One Pillar Pagoda.</div>
-                                            <div> <strong>Afternoon:</strong> Relax on Kata or Karon Beach.</div>
-                                            <div> <strong>Evening:</strong> Explore the Temple of Literature and Hoan Kiem Lake.</div>
+                                            <h4>London</h4>
+                                            <div> <strong>Morning:</strong> Breakfast at the resort.</div>
+                                            <div> <strong>Afternoon:</strong> Explore Westminster Abbey and Big Ben.</div>
+                                            <div> <strong>Evening:</strong> London Eye experience.</div>
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
-                                            <h4>Halong Bay Cruise</h4>
-                                            <div> <strong>Morning:</strong> Depart for Halong Bay.</div>
-                                            <div> <strong>Afternoon:</strong> Board a cruise, explore limestone caves.</div>
-                                            <div> <strong>Evening:</strong> Enjoy dinner and overnight stay on the cruise.</div>
+                                            <h4>London to Paris</h4>
+                                            <div> <strong>Morning:</strong> Take the Eurostar to Paris.</div>
+                                            <div> <strong>Afternoon:</strong> Visit the Louvre Museum.</div>
+                                            <div> <strong>Evening:</strong> Seine River Cruise.</div>
 
                                         </div>
 
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/paris.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/CEday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
-                                            <h4>Halong Bay to Hanoi</h4>
-                                            <div> <strong>Morning:</strong>  Continue cruising, participate in a Tai Chi session.</div>
-                                            <div> <strong>Afternoon:</strong> Return to Hanoi.</div>
-                                            <div> <strong>Evening:</strong> Free time or optional cultural activities.</div>
+                                            <h4>Paris</h4>
+                                            <div> <strong>Morning:</strong> Eiffel Tower visit.</div>
+                                            <div> <strong>Afternoon:</strong> Eiffel Tower visit.</div>
+                                            <div> <strong>Evening:</strong> Optional cabaret show at Moulin Rouge.</div>
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
-                                            <h4>Fly to Hue</h4>
-                                            <div> <strong>Morning:</strong> Flight to Hue.</div>
-                                            <div> <strong>Afternoon:</strong> Visit the Imperial City and Thien Mu Pagoda.</div>
-                                            <div> <strong>Evening:</strong> Cruise on the Perfume River.</div>
+                                            <h4>Paris to Rome</h4>
+                                            <div> <strong>Morning:</strong> Flight to Rome.</div>
+                                            <div> <strong>Afternoon:</strong> Flight to Rome.</div>
+                                            <div> <strong>Evening:</strong> Explore Trastevere.</div>
 
                                         </div>
 
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/CEday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/CEday6.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
-                                            <h4>Hue to Hoi An</h4>
-                                            <div> <strong>Morning:</strong> Visit the Royal Tombs.</div>
-                                            <div> <strong>Afternoon:</strong> Drive to Hoi An via Hai Van Pass.</div>
-                                            <div> <strong>Evening:</strong> Explore Hoi An Ancient Town.</div>
+                                            <h4>Rome</h4>
+                                            <div> <strong>Morning:</strong> Vatican City and St. Peter's Basilica.</div>
+                                            <div> <strong>Afternoon:</strong> Sistine Chapel and Vatican Museums.</div>
+                                            <div> <strong>Evening:</strong> Spanish Steps and Trevi Fountain.</div>
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
-                                            <h4>Hoi An Exploration</h4>
-                                            <div> <strong>Morning:</strong> Visit My Son Sanctuary.</div>
-                                            <div> <strong>Afternoon:</strong> Cooking class or leisure time at An Bang Beach.</div>
-                                            <div> <strong>Evening:</strong> Lantern-lit streets and river cruise in Hoi An.</div>
+                                            <h4>Departure from Rome</h4>
+                                            <div> <strong>Morning:</strong> Last-minute shopping.</div>
+                                            <div> <strong>Afternoon:</strong> Last-minute shopping.</div>
+                                            <div> <strong>Evening:</strong> Flight back home.</div>
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
-                                            <h4>Fly to Ho Chi Minh City (Saigon)</h4>
-                                            <div> <strong>Morning:</strong> Flight to Ho Chi Minh City.</div>
-                                            <div> <strong>Afternoon:</strong> Visit the War Remnants Museum and Notre Dame Cathedral.</div>
-                                            <div> <strong>Evening:</strong> Explore Ben Thanh Market.</div>
-
-                                        </div>
-
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaTripDetails">
-
-                                            <h2 > <u>Day 9</u> </h2>
-                                            <h4>Mekong Delta Day Trip</h4>
-                                            <div> <strong>Morning:</strong> Depart for Mekong Delta.</div>
-                                            <div> <strong>Afternoon:</strong> Boat tour, visit local villages.</div>
-                                            <div> <strong>Evening:</strong> Return to Ho Chi Minh City.</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/CEday7.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaTripDetails">
-
-                                            <h2 > <u>Day 10</u> </h2>
-                                            <h4>Cu Chi Tunnels and Departure</h4>
-                                            <div> <strong>Morning:</strong> Visit Cu Chi Tunnels.</div>
-                                            <div> <strong>Afternoon:</strong> Last-minute shopping or sightseeing.</div>
-                                            <div> <strong>Evening:</strong> Transfer to Tan Son Nhat International Airport for departure.</div>
-                                        </div>
-
-                                    </div>
-
-                                    <div className='my-4 lastDetails' style={{ textAlign: "justify" }}> <strong>Optional Add-Ons:</strong> Sapa Trekking: If you extend your trip, consider a 2-day trek in Sapa.
-                                        Phong Nha Caves: Another extension could include visiting these incredible caves.
-                                        Nha Trang Beach: For beach lovers, adding a couple of days in Nha Trang could be ideal.
-                                        This itinerary offers a mix of cultural, historical, and natural experiences, making the most out of a 10-day trip to Vietnam. Feel free to adjust the schedule based on your interests and travel pace.
-                                    </div>
 
                                 </div>
                             </div>
 
                         </div>
+
+                        <div className="WesternEuropeanTrioDetails" style={{ display: selectdetails === "Western European Trio" ? "block" : "none" }}>
+
+                            <div className="container my-4">
+
+                                <div className="row">
+
+                                    <div className="maintopic">
+                                        <h2><u>Western European Trio Exploration</u></h2>
+                                        <h4>A 7-day tour package covering Paris, Amsterdam, and Brussels can offer a rich blend of history, culture, and modernity. Here's a sample itinerary broken down into morning, afternoon, and evening activities:</h4>
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+                                            <h2 > <u>Day 1</u> </h2>
+                                            <h4>Arrival in Paris</h4>
+                                            <div> <strong>Morning:</strong> Arrive at Charles de Gaulle Airport, transfer to hotel.</div>
+                                            <div> <strong>Afternoon:</strong> Visit the Louvre Museum.</div>
+                                            <div> <strong>Evening:</strong> Seine River Cruise.</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/CEday4.jpg" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/paris.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 2</u> </h2>
+                                            <h4>Paris Sightseeing</h4>
+                                            <div> <strong>Morning:</strong> Visit the Eiffel Tower.</div>
+                                            <div> <strong>Afternoon:</strong> Explore Montmartre and Sacré-Cœur Basilica.</div>
+                                            <div> <strong>Evening:</strong> Optional cabaret show at Moulin Rouge.</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+                                            <h2 > <u>Day 3</u> </h2>
+                                            <h4>Paris to Amsterdam</h4>
+                                            <div> <strong>Morning:</strong> Take a Thalys train to Amsterdam.</div>
+                                            <div> <strong>Afternoon:</strong> Check-in at the hotel, then visit Anne Frank House.</div>
+                                            <div> <strong>Evening:</strong> Canal cruise or explore De Wallen (Red Light District).</div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/WEday3.webp" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/WEday4.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 4</u> </h2>
+                                            <h4>Amsterdam Sightseeing</h4>
+                                            <div> <strong>Morning:</strong> Visit Rijksmuseum.</div>
+                                            <div> <strong>Afternoon:</strong> Explore Vondelpark or take a bike tour.</div>
+                                            <div> <strong>Evening:</strong> Visit Leidseplein for dining and entertainment.</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+                                            <h2 > <u>Day 5</u> </h2>
+                                            <h4>Amsterdam to Brussels</h4>
+                                            <div> <strong>Morning:</strong> Take a train to Brussels.</div>
+                                            <div> <strong>Afternoon:</strong> Visit Atomium and Mini-Europe.</div>
+                                            <div> <strong>Evening:</strong> Visit Atomium and Mini-Europe.</div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/WEday5.jpg" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/WEday6.jpg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 6</u> </h2>
+                                            <h4>Brussels Sightseeing</h4>
+                                            <div> <strong>Morning:</strong> Visit the Royal Palace.</div>
+                                            <div> <strong>Afternoon:</strong> Explore Magritte Museum or Comic Strip Center.</div>
+                                            <div> <strong>Evening:</strong> Sample Belgian beers at Delirium Café.</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 7</u> </h2>
+                                            <h4>Brussels to Paris and Departure</h4>
+                                            <div> <strong>Morning:</strong> Take a train back to Paris.</div>
+                                            <div> <strong>Afternoon:</strong> Last-minute shopping or visit Champs-Élysées.</div>
+                                            <div> <strong>Evening:</strong> Transfer to Charles de Gaulle Airport for departure.</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/WEday7.jpeg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="AustriaDetails" style={{ display: selectdetails === "Switzerland and Austria" ? "block" : "none" }}>
+
+                            <div className="container my-4">
+
+                                <div className="row">
+
+                                    <div className="maintopic">
+                                        <h2><u>Switzerland and Austria</u></h2>
+                                        <h4>A 7-day tour package in Switzerland and Austria can offer a well-rounded experience of the city's historical sites, natural, cultural attractions, and modern amenities. Here's a sample itinerary for a 7-day tour package in Switzerland and Austria:</h4>
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+                                            <h2 > <u>Day 1</u> </h2>
+                                            <h4>Arrival in Zurich</h4>
+                                            <div> <strong>Morning:</strong> Arrive at Zurich Airport, transfer to Lucerne.</div>
+                                            <div> <strong>Afternoon:</strong> Visit Chapel Bridge and Water Tower.</div>
+                                            <div> <strong>Evening:</strong> Lake Lucerne Cruise.</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/SAday1.jpg" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/SAday2.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 2</u> </h2>
+                                            <h4>Lucerne</h4>
+                                            <div> <strong>Morning:</strong> Mount Pilatus day trip.</div>
+                                            <div> <strong>Afternoon:</strong> Explore the mountain.</div>
+                                            <div> <strong>Evening:</strong> Return to Lucerne.</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+                                            <h2 > <u>Day 3</u> </h2>
+                                            <h4>Lucerne to Interlaken</h4>
+                                            <div> <strong>Morning:</strong> Train to Interlaken.</div>
+                                            <div> <strong>Afternoon:</strong> Visit Harder Kulm.</div>
+                                            <div> <strong>Evening:</strong> Explore Interlaken.</div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/SAday3.jpg" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/SAday4.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 4</u> </h2>
+                                            <h4>Interlaken</h4>
+                                            <div> <strong>Morning:</strong> Jungfraujoch day trip.</div>
+                                            <div> <strong>Afternoon:</strong> Explore the "Top of Europe.</div>
+                                            <div> <strong>Evening:</strong> Return to Interlaken.</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+                                            <h2 > <u>Day 5</u> </h2>
+                                            <h4>Interlaken to Salzburg</h4>
+                                            <div> <strong>Morning:</strong> Train to Salzburg.</div>
+                                            <div> <strong>Afternoon:</strong> Visit Hohensalzburg Fortress.</div>
+                                            <div> <strong>Evening:</strong> Explore Old Town.</div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/SAday5.jpg" alt="" />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/SAday6.jpg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 6</u> </h2>
+                                            <h4>Salzburg</h4>
+                                            <div> <strong>Morning:</strong> Sound of Music Tour.</div>
+                                            <div> <strong>Afternoon:</strong> Visit Mirabell Palace.</div>
+                                            <div> <strong>Evening:</strong> Mozart Dinner Concert.</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
+
+                                            <h2 > <u>Day 7</u> </h2>
+                                            <h4> Departure from Salzburg</h4>
+                                            <div> <strong>Morning:</strong> Last-minute shopping.</div>
+                                            <div> <strong>Afternoon:</strong> Transfer to Salzburg Airport.</div>
+                                            <div> <strong>Evening:</strong> Flight back home.</div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/Europe/SAday7.webp" alt="" />
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
 
                     </div>
 
@@ -401,3 +782,7 @@ const Europe = () => {
 }
 
 export default Europe
+
+
+
+

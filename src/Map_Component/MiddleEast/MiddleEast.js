@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import Footer from '../../Component/Footer';
-import '../SouthEastAsia/SouthEastAsia.css';
 import { Link } from 'react-router-dom';
 import './MiddleEast.css';
 
@@ -11,7 +10,6 @@ const MiddleEast = () => {
         e.stopPropagation();
         document.getElementById("mySidenav").style.width = "220px";
     }
-
     function closeNav(e) {
         e.stopPropagation();
         document.getElementById("mySidenav").style.width = "0px";
@@ -34,6 +32,7 @@ const MiddleEast = () => {
         document.getElementById("SeaDecription2").style.display = "none";
 
     }
+
     function showDescription3() {
         document.getElementById("SeaDecription3").style.display = "block";
 
@@ -87,17 +86,17 @@ const MiddleEast = () => {
                 </div>
             </div>
 
-            <div className="southEastAsia">
-                <div className="SthImage">
+            <div className="TopMainImage">
+                <div className="Image">
                     <img className='img-fluid' src="./Images/MiddleEast/middleEastMain.jpg" alt="" />
                 </div>
 
                 <h1>MIDDLE-EAST</h1>
             </div>
 
-            <div className="SeaTour">
+            <div className="CountryTour">
 
-                <div className="SeaTourName">
+                <div className="CountryTourName">
 
                     <div class="accordion accordion-flush" id="accordionFlushExample" >
 
@@ -135,7 +134,7 @@ const MiddleEast = () => {
 
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed SeaPlaceName" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                                     Jordan
                                 </button>
                             </h2>
@@ -152,7 +151,7 @@ const MiddleEast = () => {
 
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed SeaPlaceName" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                                     Baku
                                 </button>
                             </h2>
@@ -173,7 +172,7 @@ const MiddleEast = () => {
 
                 </div>
 
-                <div className="SeaTourDetails">
+                <div className="CountryTourDetails">
 
 
                     <div className="container">
@@ -191,11 +190,11 @@ const MiddleEast = () => {
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
-                                            <div className="MeTourImage">
-                                                <img className='img-fluid' src="./Images/MiddleEast/Dubai.jpeg" alt="" />
+                                            <div className="CommonTourImage">
+                                                <img className='img-fluid' src="./Images/MiddleEast/Dubai.jpg" alt="" />
                                             </div>
 
-                                            <div className="MeImageDiscription" id='SeaDecription' >
+                                            <div className="CommonImageDiscription" id='SeaDecription' >
                                                 <h5>Dubai Delights</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
@@ -210,7 +209,7 @@ const MiddleEast = () => {
                                                     Example: A panoramic view from the Burj Khalifa's observation deck, followed by an evening of traditional Emirati entertainment in a desert camp.</div>
                                             </div>
 
-                                            <div className='SeaPlaceName'>Dubai Delights</div>
+                                            <div className='CountryPlaceName'>Dubai Delights</div>
                                         </div>
 
                                     </div>
@@ -218,11 +217,11 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
-                                            <div className="MeTourImage">
+                                            <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/MiddleEast/Egypt.jpg" alt="" />
                                             </div>
 
-                                            <div className="MeImageDiscription" id='SeaDecription2' >
+                                            <div className="CommonImageDiscription" id='SeaDecription2' >
                                                 <h5>Historical Highlights of Egypt</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
@@ -237,7 +236,7 @@ const MiddleEast = () => {
                                                     Example: A sunrise visit to the iconic Giza pyramids, followed by a traditional felucca boat ride on the Nile in the evening.</div>
                                             </div>
 
-                                            <div className='SeaPlaceName'>Historical Highlights of Egypt</div>
+                                            <div className='CountryPlaceName'>Historical Highlights of Egypt</div>
                                         </div>
 
                                     </div>
@@ -245,11 +244,11 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
-                                            <div className="MeTourImage">
+                                            <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/MiddleEast/Jordan.jpg" alt="" />
                                             </div>
 
-                                            <div className="MeImageDiscription" id='SeaDecription3'>
+                                            <div className="CommonImageDiscription" id='SeaDecription3'>
                                                 <h5>Jordan Wonders</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
@@ -266,7 +265,7 @@ const MiddleEast = () => {
 
 
 
-                                            <div className='SeaPlaceName'>Jordan Wonders</div>
+                                            <div className='CountryPlaceName'>Jordan Wonders</div>
                                         </div>
 
                                     </div>
@@ -274,12 +273,12 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="tourInnerDetails" onMouseEnter={showDescription5} onMouseLeave={hideDescription5}>
-                                            <div className="MeTourImage">
+
+                                            <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/MiddleEast/Baku.jpg" alt="" />
                                             </div>
 
-
-                                            <div className="MeImageDiscription" id='SeaDecription5' >
+                                            <div className="CommonImageDiscription" id='SeaDecription5' >
                                                 <h5>Baku City Highlights</h5>
                                                 <div>
                                                     <strong> Duration: </strong>
@@ -296,7 +295,7 @@ const MiddleEast = () => {
                                             </div>
 
 
-                                            <div className='SeaPlaceName'>Baku City Highlights</div>
+                                            <div className='CountryPlaceName'>Baku City Highlights</div>
                                         </div>
 
                                     </div>
@@ -321,9 +320,9 @@ const MiddleEast = () => {
                                         <h4>A 7-day tour package in Dubai can offer a blend of modern architecture, luxury shopping, desert adventures, and cultural experiences. Here's a sample itinerary for a 7-day tour package in Dubai:</h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
                                             <h4>Arrival and Orientation</h4>
                                             <div> <strong>Morning:</strong> Arrive at Dubai International Airport, transfer to hotel.</div>
@@ -334,26 +333,26 @@ const MiddleEast = () => {
                                     </div>
 
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Dday1.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Dday2.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
                                             <h4>City Highlights</h4>
@@ -365,9 +364,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
                                             <h4>Cultural Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit the Al Fahidi Historic District and Dubai Museum.</div>
@@ -379,26 +378,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Dday3.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Dday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
                                             <h4>Desert Safari</h4>
@@ -409,9 +408,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
                                             <h4>Abu Dhabi Day Trip</h4>
                                             <div> <strong>Morning:</strong> Depart for Abu Dhabi.</div>
@@ -423,24 +422,24 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Dday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Dday6.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
                                             <h4>Luxury and Leisure</h4>
@@ -451,9 +450,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
                                             <h4>Last-Minute Shopping and Departure</h4>
@@ -464,10 +463,10 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Dday7.jpg" alt="" />
 
                                         </div>
 
@@ -501,9 +500,9 @@ const MiddleEast = () => {
                                         <h4>A 10-day tour of Egypt can offer a rich blend of historical, cultural, and natural experiences. Here's a sample itinerary for a 10-day tour package in Egypt:</h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
                                             <h4>Arrival in Cairo</h4>
                                             <div> <strong>Morning:</strong> Arrive at Cairo International Airport, transfer to hotel.</div>
@@ -513,26 +512,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday1.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday2.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
                                             <h4>Cairo City Tour</h4>
@@ -544,9 +543,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
                                             <h4>Giza Pyramids and Sphinx</h4>
                                             <div> <strong>Morning:</strong> Visit the Giza Plateau to see the Pyramids and the Sphinx.</div>
@@ -558,26 +557,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday3.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
                                             <h4>Fly to Aswan</h4>
@@ -588,9 +587,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
                                             <h4>Abu Simbel and Nile Cruise</h4>
                                             <div> <strong>Morning:</strong> Optional trip to Abu Simbel.</div>
@@ -602,24 +601,24 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday6.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
                                             <h4>Kom Ombo and Edfu</h4>
@@ -631,9 +630,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
                                             <h4>Luxor's East Bank</h4>
@@ -644,26 +643,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday7.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday8.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 8</u> </h2>
                                             <h4>Luxor's West Bank</h4>
                                             <div> <strong>Morning:</strong> Visit the Valley of the Kings and the Temple of Hatshepsut.</div>
@@ -674,9 +673,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 9</u> </h2>
                                             <h4>Old Cairo and Shopping</h4>
@@ -687,27 +686,27 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
-
-                                        </div>
-
-                                    </div>
-
-                                    <div className="col-sm-12 col-lg-6 mb-4">
-
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday9.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Eday10.jpg" alt="" />
+
+                                        </div>
+
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
+
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 10</u> </h2>
                                             <h4>Departure</h4>
@@ -739,9 +738,9 @@ const MiddleEast = () => {
                                         <h4>An 8-day tour package in Jordan can offer a rich blend of historical, cultural, and natural experiences. Here's a sample itinerary for an 8-day tour package in Jordan:</h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
                                             <h4>Arrival in Amman</h4>
                                             <div> <strong>Morning:</strong> Arrive at Queen Alia International Airport, transfer to hotel.</div>
@@ -751,26 +750,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday1.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday2.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
                                             <h4>Amman City Tour</h4>
@@ -782,9 +781,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
                                             <h4>Jerash and Ajloun</h4>
                                             <div> <strong>Morning:</strong> Drive to Jerash to explore the ancient Roman ruins.</div>
@@ -796,26 +795,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday3.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
                                             <h4>Madaba, Mount Nebo, and Dead Sea</h4>
@@ -827,9 +826,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
                                             <h4>Petra</h4>
                                             <div> <strong>Morning:</strong> Drive to Petra.</div>
@@ -841,24 +840,24 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday6.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
                                             <h4>Wadi Rum</h4>
@@ -870,9 +869,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
                                             <h4>Aqaba and Red Sea</h4>
@@ -884,26 +883,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday7.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Jday8.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 8</u> </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping or optional activities.</div>
@@ -936,9 +935,9 @@ const MiddleEast = () => {
                                         <h4>A 7-day tour package in Baku, Azerbaijan, can offer a mix of historical sites, modern architecture, and natural wonders. Here's a sample itinerary for a 7-day tour package in Baku:</h4>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 1</u> </h2>
                                             <h4>Arrival in Baku</h4>
                                             <div> <strong>Morning:</strong> Arrive at Heydar Aliyev International Airport, transfer to hotel.</div>
@@ -948,26 +947,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala2.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Bday1.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala1.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Bday2.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 2</u> </h2>
                                             <h4>Baku City Tour</h4>
@@ -979,9 +978,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 3</u> </h2>
                                             <h4>Gobustan and Mud Volcanoes</h4>
                                             <div> <strong>Morning:</strong> Drive to Gobustan National Park to see ancient rock carvings.</div>
@@ -993,26 +992,26 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala3.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Bday3.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala5.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Bday4.jpg" alt="" />
 
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 4</u> </h2>
                                             <h4>Absheron Peninsula</h4>
@@ -1024,9 +1023,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
                                             <h2 > <u>Day 5</u> </h2>
                                             <h4>Day Trip to Gabala</h4>
                                             <div> <strong>Morning:</strong> Drive to Gabala.</div>
@@ -1038,24 +1037,24 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala6.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Bday5.jpg" alt="" />
                                         </div>
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Bday7.jpg" alt="" />
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 6</u> </h2>
                                             <h4>Shopping and Leisure</h4>
@@ -1067,9 +1066,9 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaTripDetails">
+                                        <div className="CommonTripDetails">
 
                                             <h2 > <u>Day 7</u> </h2>
                                             <h4>Departure</h4>
@@ -1080,10 +1079,10 @@ const MiddleEast = () => {
 
                                     </div>
 
-                                    <div className="col-sm-12 col-lg-6 mb-4">
+                                    <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="SeaImages">
-                                            <img className='img-fluid' src="./TripImages/simala4.jpg" alt="" />
+                                        <div className="CommonImages">
+                                            <img className='img-fluid' src="./Images/MiddleEast/Bday6.jpg" alt="" />
 
                                         </div>
 

@@ -1,0 +1,273 @@
+.TopMainImage {
+    position: relative;
+
+    & .Image {
+        width: 100%;
+        height: 450px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & h1 {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(255, 253, 253);
+        font-size: 3.5rem;
+        left: 50%;
+    }
+}
+
+
+.CountryTour {
+    display: flex;
+
+    & .CountryTourName {
+        width: 20%;
+        height: 100vh;
+        display: block;
+        overflow: hidden;
+        border: 1px solid #cacacc;
+        position: sticky;
+        top: 102px;
+    }
+
+    & .traveldays div {
+
+        margin: 5px 0;
+        cursor: pointer;
+        font-size: 17px;
+        color: white;
+        padding: 5px 10px;
+        border-top-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: #0c9efd;
+        text-align: center
+    }
+
+    & .selectDate:hover {
+        background-color: #0676c1;
+        margin-right: -10px;
+        transition: .4s;
+        color: white;
+    }
+
+    & .accordion-header button {
+        font-weight: bold;
+        color: #120a39;
+        font-size: 17px;
+    }
+
+
+
+    & .CountryTourDetails {
+        width: 80%;
+    }
+}
+
+.CommonTripDetails {
+    & h2 {
+        color: #0c9efd;
+        font-size: 27px;
+        font-weight: bold;
+    }
+
+    & h4,
+    div {
+        color: rgb(108, 108, 108);
+    }
+}
+
+.CountryTourDetails {
+
+    & .lastDetails {
+        color: rgb(108, 108, 108);
+    }
+
+    & .CommonImages {
+        width: 100%;
+        height: 250px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    }
+}
+
+.maintopic {
+    text-align: center;
+    margin-bottom: 15px;
+
+    & h2 {
+        font-weight: bold;
+        color: #120a39;
+        font-size: 35px;
+        margin: 0px 0px 20px 0px;
+    }
+
+    & h4 {
+        color: rgb(108, 108, 108);
+        font-size: 20px;
+    }
+
+}
+
+.CountryTour {
+    & .CommonTourName {
+        width: 20%;
+        height: 100vh;
+        display: block;
+        overflow: hidden;
+        border: 1px solid #cacacc;
+        position: sticky;
+        top: 102px;
+
+        & .traveldays {
+
+            & div {
+                margin: 5px 0;
+                cursor: pointer;
+                font-size: 17px;
+                color: white;
+                padding: 5px 10px;
+                border-top-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                background-color: #0c9efd;
+                text-align: center;
+            }
+
+        }
+
+        & .selectDate:hover {
+            background-color: #0676c1;
+            margin-right: -10px;
+            transition: .4s;
+            color: white;
+        }
+
+        & .selectDate:not(:hover) {
+            transition: .5s;
+        }
+    }
+}
+
+
+
+.tourInnerDetails {
+    position: relative;
+
+    & .CommonPlaceName {
+        font-weight: bold;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 17px;
+    }
+
+    & .CommonImageDiscription {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        text-align: justify;
+        color: white;
+        padding: 7px;
+        height: 250px;
+        width: 100%;
+        background-color: #120a39;
+        display: none;
+        font-size: 15px;
+    }
+
+    & .CommonTourImage {
+        width: 100%;
+        height: 250px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.CountryPlaceName {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+@media only screen and (max-width:830px) {
+    .CountryTour {
+        display: flex;
+
+        & .CountryTourName {
+            width: 30%;
+            height: 100vh;
+        }
+
+        & .CountryTourDetails {
+            width: 70%;
+        }
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .CountryTour {
+        display: flex;
+        flex-direction: column;
+
+        & .CountryTourName {
+            width: 100%;
+            height: 25vh;
+            display: block;
+            overflow-y: scroll;
+            border: 1px solid #cacacc;
+            position: static;
+
+        }
+
+        & .CountryTourDetails {
+            width: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    .TopMainImage {
+        position: relative;
+
+        & .Image {
+            width: 100%;
+            height: 300px;
+        }
+
+        & h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .TopMainImage {
+        position: relative;
+
+        & .Image {
+            width: 100%;
+            height: 200px;
+        }
+
+        & h1 {
+            font-size: 1.8rem;
+        }
+    }
+}
