@@ -12,8 +12,12 @@
 }
 
 .tCont {
+    & h1 {
+        color: #120a39;
+        text-align: center;
+    }
 
-    & p{
+    & p {
         line-height: 35px;
         font-size: 17px;
         color: grey;
@@ -22,7 +26,7 @@
         /* font-family: 'Montserrat', sans-serif; */
     }
 
-   & h4{
+    & h4 {
         color: grey;
         font-weight: 600;
         margin: 15px 0;

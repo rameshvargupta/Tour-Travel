@@ -2,7 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 import '../Component_Css/Refund.css';
+
 const Refund = () => {
+
   function openNav(e) {
     e.stopPropagation();
     document.getElementById("mySidenav").style.width = "220px";
@@ -18,7 +20,7 @@ const Refund = () => {
       <div className="Navbar">
         <div className="container NavStart">
           <Link to={"/"} >  <div className="logo">
-          <img src="./Images/logo.jpg" alt="" />
+            <img src="./Images/logo.jpg" alt="" />
           </div>
           </Link>
 
@@ -48,14 +50,20 @@ const Refund = () => {
         </div>
       </div>
 
+      <div className="whatsapplogo">
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
+      </div>
+
       <div className="refund">
 
-        <div className="image">
-          <img className='img-fluid' src="./Images/refund.jpg" alt="" />
+        <div className="Image">
+          <img className='img-fluid' src="./Images/CancelImage.jpg" alt="" />
         </div>
+
       </div>
       <div className="container RCont my-4">
-        <h1 className='my-4'> <u>REFUND & CANCELATION</u> </h1>
+        <h1 className='my-4'>Refund & Cancelation</h1>
 
         <p>Bookings cancelled after confirmation and payment of deposit will incur cancellation fees as a percentage of the total booking cost as follows, dependent upon the number of days prior to departure that arrangements are cancelled:</p>
         <h4>90-60 days prior to arrival – 100% refund, 59 – 30 days prior to arrival. – 80% refund, 29 – 15 days prior to arrival – 65% refund, 15 – 07 days prior to arrival – 50% refund 00- 07 days prior to arrival – No refund,</h4>

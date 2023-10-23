@@ -86,12 +86,19 @@ const MiddleEast = () => {
                 </div>
             </div>
 
+            <div className="whatsapplogo">
+                <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+                </a><div className='whatapptext'>Contact Us</div>
+            </div>
+
             <div className="TopMainImage">
                 <div className="Image">
                     <img className='img-fluid' src="./Images/MiddleEast/middleEastMain.jpg" alt="" />
                 </div>
 
-                <h1>MIDDLE-EAST</h1>
+                <div className='countryName'>
+                    <div className='CountryBackground'><h1>MIDDLE-EAST</h1></div>
+                </div>
             </div>
 
             <div className="CountryTour">
@@ -188,7 +195,7 @@ const MiddleEast = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Dubai")} onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/MiddleEast/Dubai.jpg" alt="" />
@@ -216,7 +223,7 @@ const MiddleEast = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Egypt")} onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/MiddleEast/Egypt.jpg" alt="" />
                                             </div>
@@ -243,7 +250,7 @@ const MiddleEast = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Jordan")} onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/MiddleEast/Jordan.jpg" alt="" />
                                             </div>
@@ -272,7 +279,7 @@ const MiddleEast = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription5} onMouseLeave={hideDescription5}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Baku")} onMouseEnter={showDescription5} onMouseLeave={hideDescription5}>
 
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/MiddleEast/Baku.jpg" alt="" />
@@ -316,14 +323,14 @@ const MiddleEast = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Dubai Discovery</u></h2>
+                                        <h2>Dubai Discovery</h2>
                                         <h4>A 7-day tour package in Dubai can offer a blend of modern architecture, luxury shopping, desert adventures, and cultural experiences. Here's a sample itinerary for a 7-day tour package in Dubai:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival and Orientation</h4>
                                             <div> <strong>Morning:</strong> Arrive at Dubai International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -354,7 +361,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>City Highlights</h4>
                                             <div> <strong>Morning:</strong> Visit the Burj Khalifa and enjoy panoramic views from the observation deck.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Dubai Mall and watch the Dubai Fountain show.</div>
@@ -367,7 +374,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Cultural Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit the Al Fahidi Historic District and Dubai Museum.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Gold Souk and Spice Souk.</div>
@@ -399,7 +406,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Desert Safari</h4>
                                             <div> <strong>Morning:</strong>  Free time or optional beach visit.</div>
                                             <div> <strong>Afternoon:</strong> Desert Safari with dune bashing, camel riding, and sandboarding.</div>
@@ -411,7 +418,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Abu Dhabi Day Trip</h4>
                                             <div> <strong>Morning:</strong> Depart for Abu Dhabi.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Sheikh Zayed Grand Mosque and the Louvre Abu Dhabi.</div>
@@ -441,7 +448,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Luxury and Leisure</h4>
                                             <div> <strong>Morning:</strong> Visit Palm Jumeirah and take a monorail ride.</div>
                                             <div> <strong>Afternoon:</strong> Relax at Atlantis, The Palm's Aquaventure Waterpark or visit the Lost Chambers Aquarium.</div>
@@ -454,7 +461,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Last-Minute Shopping and Departure</h4>
                                             <div> <strong>Morning:</strong> Visit the Mall of the Emirates and try indoor skiing if interested.</div>
                                             <div> <strong>Afternoon:</strong> Last-minute shopping at local markets or souks.</div>
@@ -496,14 +503,14 @@ const MiddleEast = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Egypt Explorer</u></h2>
+                                        <h2>Egypt Explorer</h2>
                                         <h4>A 10-day tour of Egypt can offer a rich blend of historical, cultural, and natural experiences. Here's a sample itinerary for a 10-day tour package in Egypt:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Cairo</h4>
                                             <div> <strong>Morning:</strong> Arrive at Cairo International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -533,7 +540,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Cairo City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit the Egyptian Museum.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Citadel of Saladin and the Mosque of Muhammad Ali.</div>
@@ -546,7 +553,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Giza Pyramids and Sphinx</h4>
                                             <div> <strong>Morning:</strong> Visit the Giza Plateau to see the Pyramids and the Sphinx.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Solar Boat Museum.</div>
@@ -578,7 +585,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Fly to Aswan</h4>
                                             <div> <strong>Morning:</strong> Flight to Aswan.</div>
                                             <div> <strong>Afternoon:</strong> Visit the High Dam and Philae Temple.</div>
@@ -590,7 +597,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Abu Simbel and Nile Cruise</h4>
                                             <div> <strong>Morning:</strong> Optional trip to Abu Simbel.</div>
                                             <div> <strong>Afternoon:</strong> Board a Nile cruise and set sail.</div>
@@ -620,7 +627,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Kom Ombo and Edfu</h4>
                                             <div> <strong>Morning:</strong> Visit Kom Ombo Temple.</div>
                                             <div> <strong>Afternoon:</strong> Sail to Edfu and visit Edfu Temple.</div>
@@ -634,7 +641,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Luxor's East Bank</h4>
                                             <div> <strong>Morning:</strong> Visit Karnak Temple.</div>
                                             <div> <strong>Afternoon:</strong> Explore Luxor Temple.</div>
@@ -663,7 +670,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Luxor's West Bank</h4>
                                             <div> <strong>Morning:</strong> Visit the Valley of the Kings and the Temple of Hatshepsut.</div>
                                             <div> <strong>Afternoon:</strong> See the Colossi of Memnon.</div>
@@ -677,7 +684,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Old Cairo and Shopping</h4>
                                             <div> <strong>Morning:</strong> Visit Old Cairo, including the Hanging Church and Ben Ezra Synagogue.</div>
                                             <div> <strong>Afternoon:</strong> Shopping at Khan El Khalili Bazaar.</div>
@@ -708,7 +715,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping or optional activities.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Cairo International Airport for departure.</div>
@@ -734,14 +741,14 @@ const MiddleEast = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Jordan Getaway</u></h2>
+                                        <h2>Jordan Getaway</h2>
                                         <h4>An 8-day tour package in Jordan can offer a rich blend of historical, cultural, and natural experiences. Here's a sample itinerary for an 8-day tour package in Jordan:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Amman</h4>
                                             <div> <strong>Morning:</strong> Arrive at Queen Alia International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -771,7 +778,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Amman City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit the Amman Citadel and the Roman Theater.</div>
                                             <div> <strong>Afternoon:</strong> Explore the King Abdullah Mosque and the Jordan Museum.</div>
@@ -784,7 +791,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Jerash and Ajloun</h4>
                                             <div> <strong>Morning:</strong> Drive to Jerash to explore the ancient Roman ruins.</div>
                                             <div> <strong>Afternoon:</strong> Visit Ajloun Castle.</div>
@@ -816,7 +823,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Madaba, Mount Nebo, and Dead Sea</h4>
                                             <div> <strong>Morning:</strong> Visit Madaba and see the famous mosaic map.</div>
                                             <div> <strong>Afternoon:</strong> Head to Mount Nebo, then proceed to the Dead Sea.</div>
@@ -829,7 +836,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Petra</h4>
                                             <div> <strong>Morning:</strong> Drive to Petra.</div>
                                             <div> <strong>Afternoon:</strong> Explore Petra, including the Treasury and the Monastery.</div>
@@ -859,7 +866,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Wadi Rum</h4>
                                             <div> <strong>Morning:</strong> Drive to Wadi Rum.</div>
                                             <div> <strong>Afternoon:</strong> Jeep tour in the desert.</div>
@@ -873,7 +880,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Aqaba and Red Sea</h4>
                                             <div> <strong>Morning:</strong> Drive to Aqaba.</div>
                                             <div> <strong>Afternoon:</strong> Snorkeling or diving in the Red Sea.</div>
@@ -903,7 +910,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping or optional activities.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Queen Alia International Airport for departure.</div>
@@ -931,14 +938,14 @@ const MiddleEast = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Baku & Azerbaijan</u></h2>
+                                        <h2>Baku & Azerbaijan</h2>
                                         <h4>A 7-day tour package in Baku, Azerbaijan, can offer a mix of historical sites, modern architecture, and natural wonders. Here's a sample itinerary for a 7-day tour package in Baku:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Baku</h4>
                                             <div> <strong>Morning:</strong> Arrive at Heydar Aliyev International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -968,7 +975,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Baku City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit the Old City (Icherisheher), including the Maiden Tower and Shirvanshah's Palace.</div>
                                             <div> <strong>Afternoon:</strong> Explore modern Baku, including the Flame Towers and Heydar Aliyev Center.</div>
@@ -981,7 +988,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Gobustan and Mud Volcanoes</h4>
                                             <div> <strong>Morning:</strong> Drive to Gobustan National Park to see ancient rock carvings.</div>
                                             <div> <strong>Afternoon:</strong> Visit the mud volcanoes.</div>
@@ -1013,7 +1020,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Absheron Peninsula</h4>
                                             <div> <strong>Morning:</strong> Visit Ateshgah Fire Temple.</div>
                                             <div> <strong>Afternoon:</strong> Explore Yanar Dag, the natural "fire mountain.</div>
@@ -1026,7 +1033,7 @@ const MiddleEast = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Day Trip to Gabala</h4>
                                             <div> <strong>Morning:</strong> Drive to Gabala.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Gabala amusement park or take a cable car ride for panoramic views.</div>
@@ -1056,7 +1063,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Shopping and Leisure</h4>
                                             <div> <strong>Morning:</strong> Visit Nizami Street for shopping.</div>
                                             <div> <strong>Afternoon:</strong> Optional visit to Taza Bazaar, the largest food market in Baku.</div>
@@ -1070,7 +1077,7 @@ const MiddleEast = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping or optional activities.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Heydar Aliyev International Airport for departure.</div>

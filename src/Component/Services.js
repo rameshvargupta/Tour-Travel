@@ -54,16 +54,17 @@ const Services = () => {
             </div>
 
             <div className="whatsapplogo">
-                <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
-            </div>
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
+      </div>
 
             <div className="contactMain">
-                <div className="contactImage" data-aos="fade-up">
-                    <img src="./Images/andaman.jpg" alt="" />
+                <div className="Image" data-aos="fade-up">
+                    <img src="./Images/Service.jpg" alt="" />
                 </div>
-                <div className="container SCont my-5">
-                    <h1 className='mb-4'> <u> OUR SERVICES</u></h1>
-                    <p>At Detour we create the ultimate Asia getaway to the beautiful destinations of India / Sri Lanka / Bhutan / Male / Vietnam & Nepal. We take pride in our customer service and we aim to make your holiday experience with us the best you’ve ever had. A holiday is all about leaving your worries behind and relaxing. That’s why we would never let anything come between you and a gleaming holiday.</p>
+                <div className="container SCont my-4">
+                    <h1 className='mb-4 text-center'>Our Services</h1>
+                    <p>At Nirvvair we create the ultimate global gateway to beautiful destinations of India, Europe, Asia, Africa, South-East Asia and Middle-East. We take pride in our customer service and we aim to make your holiday experience with us the best you've ever had. A holiday is all about leaving your worries behind and relaxing. That’s why we would never let anything come between you and a gleaming holiday.</p>
 
                     <div className="services my-3">
                         <h3>Overview of Services</h3>

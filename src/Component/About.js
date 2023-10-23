@@ -40,7 +40,7 @@ const About = () => {
             <i class="fa-solid fa-bars"></i>
           </div>
 
-          <div id="mySidenav" class="sidenav"  onClick={openNav}>
+          <div id="mySidenav" class="sidenav" onClick={openNav}>
             <button class="openbtn btn btn-danger" onClick={closeNav}>X</button>
             <div className="smallnav">
               <li><Link to={"/"}> Home <span className='AllIcon'><img src="./Images/Icon/home.png" alt="" /></span></Link></li>
@@ -54,23 +54,24 @@ const About = () => {
 
         </div>
       </div>
-      
+
       <div className="whatsapplogo">
-        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
       </div>
 
       <div className="aboutMain">
         <div className="aboutImage" data-aos="fade-up">
-          <img src="./Images/about.jpg" alt="" />
+          <img src="./Images/About.jpg" alt="" />
         </div>
       </div>
 
       <div className="container">
         <div className="row">
-          <h1 style={{ textAlign: "center", color: "#05203c" }} className='my-4'><u>WHY BOOK WITH CANVASTRIPS ?</u></h1>
+          <h1 style={{ textAlign: "center", color: "#05203c" }} className='my-4'>Why Book With Nirvvair ?</h1>
           <div className="col-sm-12 col-md-6 col-lg-6">
             <div className="homeDetails" data-aos="zoom-in-up">
-              <p>Canvastrips is a fully licensed and bonded destination management company based in India. We offer customized tours and travel services catering for the FIT, Group, Incentive and MICE markets.
+              <p>Nirvvair is a fully licensed and bonded destination management company based in India. We offer customized tours and travel services catering for the FIT, Group, Incentive and MICE markets.
                 We have been crafting the best holiday memories for discerning travellers from across the world since 2015. They not only provide safe and trouble-free holidays but also make sure that each day of the trip is a unique experience in itself.</p>
               <li>Air Ticketing: Best Flight Ticket for all Domestic & International sectors.</li>
               <li>Domestic Holidays: Customized Holiday Packages all over India which include airport to airport services.</li>
@@ -90,15 +91,36 @@ const About = () => {
 
       <div className="container">
         <div className="row">
-          <h1 style={{ textAlign: "center", color: "#05203c" }} className='my-4' data-aos="zoom-in-up"><u>Our Exceptional Team </u></h1>
+          <h1 style={{ textAlign: "center", color: "#05203c" }} className='my-4' data-aos="zoom-in-up">Our Aim</h1>
+
+          <div className="col-sm-12 col-lg-6">
+
+            <div className="founderImage" data-aos="zoom-in-up">
+              <img className='img-fluid' src="./Images/goal1.jpg" alt="img" />
+            </div>
+
+
+          </div>
+
+          <div className="col-sm-12 col-lg-6">
+            <div className="founderDetails" data-aos="zoom-in-up">
+              Our aim is not merely to render holiday tour but also provide a variety of services weaved to perfection according to your needs. We believe that bringing people and places together is a noble affair. Moments which people spend with their loved ones are truly magical and blessed. Likewise, holidays or get together are both an excuse and an opportunity to Explore, Relax and bound to create unforgettable moments. So we at Canvastrips & services strive to achieve this holistic experience and to ensure that every moment is timeless and unforgettable.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className="row">
+          <h1 style={{ textAlign: "center", color: "#05203c" }} className='my-4' data-aos="zoom-in-up">Our Exceptional Team</h1>
           <div className="col-sm-12 col-lg-6">
             <div className="teamDetails" data-aos="zoom-in-up">
-              <p>Our team is the heart and soul of Canvatrip Tours. Committed, passionate, and driven, we are dedicated to making your journey extraordinary.</p>
+              <p>Our team is the heart and soul of Nirvvair Tours. Committed, passionate, and driven, we are dedicated to making your journey extraordinary.</p>
               <li><strong>Customer-Centric:</strong>We listen to your needs and preferences, crafting personalized experiences that exceed your expectations.</li>
               <li><strong>24/7 Support:</strong>Our support team is available round the clock to assist you, from trip planning to on-the-ground support during your adventure.</li>
               <li><strong>Sustainability:</strong>We are committed to responsible tourism, supporting local communities, and minimizing our environmental impact wherever we go.</li>
               <li><strong>Transparent Pricing:</strong>No hidden fees or surprise costs – our pricing is transparent, making it easy for you to plan and budget for your adventure.
-                <li>Discover the world with Canvatrip Tours, where quality, affordability, and a team that cares about your adventure are at the core of what we do. Join us for the journey of a lifetime!</li>
+                <li>Discover the world with Nirvvair Tours, where quality, affordability, and a team that cares about your adventure are at the core of what we do. Join us for the journey of a lifetime!</li>
 
               </li>
 
@@ -112,27 +134,9 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container">
-        <div className="row">
-          <h1 style={{ textAlign: "center", color: "#05203c" }} className='my-4' data-aos="zoom-in-up"><u>Our Aim</u> </h1>
-
-          <div className="col-sm-12 col-lg-6">
-
-            <div className="founderImage" data-aos="zoom-in-up">
-              <img className='img-fluid' src="./Images/goal1.jpg" alt="img" />
-            </div>
 
 
-          </div>
-          <div className="col-sm-12 col-lg-6">
-            <div className="founderDetails" data-aos="zoom-in-up">
-              Our aim is not merely to render holiday tour but also provide a variety of services weaved to perfection according to your needs. We believe that bringing people and places together is a noble affair. Moments which people spend with their loved ones are truly magical and blessed. Likewise, holidays or get together are both an excuse and an opportunity to Explore, Relax and bound to create unforgettable moments. So we at Canvastrips & services strive to achieve this holistic experience and to ensure that every moment is timeless and unforgettable.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="cont3 mt-4">
+      {/* <div className="cont3 mt-4">
         <div className="container">
 
           <h1 style={{ textAlign: "center", color: " #05203c", marginBottom: "20px" }}> <u>WHAT TRAVELLERS SAY ABOUT US</u></h1>
@@ -438,9 +442,9 @@ const About = () => {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
-      <div>
+      <div className='mt-5'>
         <Footer />
       </div>
 

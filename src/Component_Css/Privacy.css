@@ -11,14 +11,17 @@
     }
 }
 
+
 .PCont {
+    & h1{
+        color: #120a39;
+    }
     & p {
         line-height: 35px;
         font-size: 17px;
         color: grey;
         margin: 0;
         text-align: justify;
-        /* font-family: 'Montserrat', sans-serif; */
     }
 
     & h4 {

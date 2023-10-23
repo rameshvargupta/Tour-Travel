@@ -1,12 +1,15 @@
-.contactImage {
-    width: 100%;
-    height: 500px;
-}
+.ContactUs {
+    & .Image {
+        width: 100%;
+        height: 350px;
 
-.contactImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
 }
 
 .contactMap {
@@ -23,7 +26,7 @@
 .ContactInputData {
     background-color: white;
     padding: 2px;
-    border: 1px solid rgb(132, 130, 130);
+    border: 1px solid rgb(194, 193, 193);
 
     & .formControl {
         width: 100%;
@@ -45,7 +48,7 @@
             border-radius: 7px;
             padding: 3px;
             outline: none;
-            border: 1px solid rgb(173, 173, 173);
+            border: 1px solid rgb(194, 193, 193);
         }
 
         & input:focus,
@@ -123,7 +126,7 @@
 .contactDetails {
     background-color: white;
     text-align: center;
-    border: 1px solid rgb(132, 130, 130);
+    border: 1px solid rgb(194, 193, 193);
     padding: 8px 20px;
     color: white;
 

@@ -48,6 +48,11 @@ const Terms = () => {
         </div>
       </div>
 
+      <div className="whatsapplogo">
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
+      </div>
+
       <div className="terms">
 
         <div className="image">
@@ -55,7 +60,7 @@ const Terms = () => {
         </div>
       </div>
       <div className="container tCont my-4">
-        <h1> <u>TERMS & CONDITIONS</u> </h1>
+        <h1>Terms & Conditions</h1>
 
         <p><h4 >User Agreement</h4> This User Agreement constitutes a binding contract between you, the User, and India Easy Trip Pvt. Ltd. with regard to the use of various services that are provided by India Easy Trip Pvt. Ltd. Please read these terms & conditions and our general information carefully before your tour booking with us. GLOBE-TROTTING HOSPITALITY PRIVATE LIMITEDis a company incorporated under the laws of India, with its principal office DT Mega mall- DLF Phase I – Gurgaon – Haryana – India, provides various travel related services through its Website (www.detour2india.com) & retail outlet at head office. Services are offered to the User conditioned on acceptance without modification of all the terms, conditions and notices contained in this Agreement. For the removal of doubts, it is clarified that availing of the Services by the User constitutes an acknowledgement and acceptance by the User of this Agreement. If the User does not agree with any part of such terms, conditions and notices, the User must not avail our Services. Additionally, the Service Provider itself may provide terms and guidelines that govern particular features, offers or the operating rules and policies applicable to each Service (for example, flights, hotel reservations, packages, etc.). The User shall be responsible for ensuring compliance with the terms and guidelines or operating rules and policies of the Service Provider with whom the User elects to deal, including terms and conditions set forth in a Service Providers’ fare rules, contract of carriage or house rules. Globe trotting Hospitality Pvt Ltd reserves the right not to accept any order placed by the User through the Website without assigning any reason thereof. Any contract to provide any service by us is not complete until full money towards the service is received from the User and accepted by India Easy Trip Pvt Ltd. </p>
 

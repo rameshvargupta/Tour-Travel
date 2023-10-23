@@ -109,6 +109,11 @@ const India = () => {
         </div>
       </div>
 
+      <div className="whatsapplogo">
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
+      </div>
+
       <div className="TopMainImage">
 
         <div className="Image">
@@ -116,8 +121,9 @@ const India = () => {
         </div>
 
         <div className='countryName'>
-          <h1>INDIA</h1>
+          <div className='CountryBackground'><h1>INDIA</h1></div>
         </div>
+
 
       </div>
 
@@ -251,7 +257,7 @@ const India = () => {
 
                   <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                    <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
+                    <div className="tourInnerDetails" onClick={() => setSelectDetails("North-East")} onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
                       <div className="CommonTourImage">
                         <img className='img-fluid' src="./Images/India/Northeast.jpg" alt="" />
@@ -277,7 +283,7 @@ const India = () => {
 
                   <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                    <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
+                    <div className="tourInnerDetails" onClick={() => setSelectDetails("Kerala")} onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
                       <div className="CommonTourImage">
                         <img className='img-fluid' src="./Images/India/kerala.jpg" alt="" />
                       </div>
@@ -302,7 +308,7 @@ const India = () => {
 
                   <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                    <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
+                    <div className="tourInnerDetails" onClick={() => setSelectDetails("North India")} onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
                       <div className="CommonTourImage">
                         <img className='img-fluid' src="./Images/India/Himachal.jpg" alt="" />
                       </div>
@@ -325,11 +331,9 @@ const India = () => {
 
                   </div>
 
-
-
                   <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                    <div className="tourInnerDetails" onMouseEnter={showDescription5} onMouseLeave={hideDescription5}>
+                    <div className="tourInnerDetails" onClick={() => setSelectDetails("Golden Triangle")} onMouseEnter={showDescription5} onMouseLeave={hideDescription5}>
                       <div className="CommonTourImage">
                         <img className='img-fluid' src="./Images/India/Golden triangle.jpg" alt="" />
                       </div>
@@ -358,7 +362,7 @@ const India = () => {
 
                   <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                    <div className="tourInnerDetails" onMouseEnter={showDescription6} onMouseLeave={hideDescription6}>
+                    <div className="tourInnerDetails" onClick={() => setSelectDetails("Rajasthan")} onMouseEnter={showDescription6} onMouseLeave={hideDescription6}>
                       <div className="CommonTourImage">
                         <img className='img-fluid' src="./Images/India/Rajasthan.jpg" alt="" />
                       </div>
@@ -386,7 +390,7 @@ const India = () => {
 
                   <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                    <div className="tourInnerDetails" onMouseEnter={showDescription7} onMouseLeave={hideDescription7}>
+                    <div className="tourInnerDetails" onClick={() => setSelectDetails("Andaman")} onMouseEnter={showDescription7} onMouseLeave={hideDescription7}>
                       <div className="CommonTourImage">
                         <img className='img-fluid' src="./Images/India/Andaman.jpg" alt="" />
                       </div>
@@ -412,9 +416,6 @@ const India = () => {
 
                   </div>
 
-
-
-
                 </div>
 
               </div>
@@ -428,14 +429,14 @@ const India = () => {
                 <div className="row">
 
                   <div className="maintopic">
-                    <h2><u>North-East Discovery</u></h2>
+                    <h2>North-East Discovery</h2>
                     <h4>A detailed 10-14 day itinerary for Northeast India, broken down into morning, afternoon, and evening activities, could look something like this:</h4>
                   </div>
 
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 1</u> </h2>
+                      <h2 > Day 1 </h2>
                       <h4>Arrival in Guwahati, Assam</h4>
                       <div> <strong>Morning:</strong> Arrive at Guwahati Airport, transfer to hotel.</div>
                       <div> <strong>Afternoon:</strong> Visit Kamakhya Temple.</div>
@@ -466,7 +467,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 2-3</u> </h2>
+                      <h2 >Day 2-3</h2>
                       <h4>Kaziranga National Park, Assam</h4>
                       <div> <strong>Morning:</strong> Drive to Kaziranga; check-in at resort.</div>
                       <div> <strong>Afternoon:</strong> Rest and acclimatize.</div>
@@ -483,7 +484,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 4-6</u> </h2>
+                      <h2 >Day 4-6</h2>
                       <h4>Meghalaya</h4>
                       <div> <strong>Morning:</strong> Drive to Shillong.</div>
                       <div> <strong>Afternoon:</strong> Visit Umiam Lake.</div>
@@ -523,7 +524,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 7-9</u> </h2>
+                      <h2 >Day 7-9</h2>
                       <h4>Arunachal Pradesh</h4>
                       <div> <strong>Morning:</strong> Drive to Bomdila.</div>
                       <div> <strong>Afternoon:</strong> Visit local monasteries.</div>
@@ -543,7 +544,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 10-12</u> </h2>
+                      <h2 >Day 10-12</h2>
                       <h4>Nagaland</h4>
                       <div> <strong>Morning:</strong> Drive to Kohima.</div>
                       <div> <strong>Afternoon:</strong> Visit the War Cemetery.</div>
@@ -581,7 +582,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 13-14</u> </h2>
+                      <h2 >Day 13-14</h2>
                       <h4>Manipur</h4>
                       <div> <strong>Morning:</strong> Fly to Imphal.</div>
                       <div> <strong>Afternoon:</strong> Visit Kangla Fort.</div>
@@ -614,14 +615,14 @@ const India = () => {
                 <div className="row">
 
                   <div className="maintopic">
-                    <h2><u>Kerala Backwaters and Beaches</u></h2>
+                    <h2>Kerala Backwaters and Beaches</h2>
                     <h4>A 7-10 day tour package in Kerala can offer a blend of natural beauty, cultural experiences, and relaxation. Here's a sample itinerary:</h4>
                   </div>
 
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 1</u> </h2>
+                      <h2 > Day 1 </h2>
                       <h4>Arrival in Kochi</h4>
                       <div> <strong>Morning:</strong> Arrive at Kochi Airport, transfer to hotel.</div>
                       <div> <strong>Afternoon:</strong> Visit Fort Kochi and Mattancherry Palace.</div>
@@ -652,7 +653,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 2</u> </h2>
+                      <h2 > Day 2 </h2>
                       <h4>Kochi to Munnar</h4>
                       <div> <strong>Morning:</strong> Drive to Munnar.</div>
                       <div> <strong>Afternoon:</strong> Visit tea plantations.</div>
@@ -665,7 +666,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 3</u> </h2>
+                      <h2 > Day 3 </h2>
                       <h4>Munnar Exploration</h4>
                       <div> <strong>Morning:</strong> Visit Eravikulam National Park.</div>
                       <div> <strong>Afternoon:</strong> Explore Mattupetty Dam.</div>
@@ -697,7 +698,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 4</u> </h2>
+                      <h2 > Day 4 </h2>
                       <h4>Munnar to Thekkady</h4>
                       <div> <strong>Morning:</strong> Drive to Thekkady.</div>
                       <div> <strong>Afternoon:</strong> Visit Periyar National Park for a boat ride.</div>
@@ -709,7 +710,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 5</u> </h2>
+                      <h2 > Day 5 </h2>
                       <h4>Thekkady to Alleppey</h4>
                       <div> <strong>Morning:</strong> Drive to Alleppey.</div>
                       <div> <strong>Afternoon:</strong> Check-in to a houseboat.</div>
@@ -739,7 +740,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 6</u> </h2>
+                      <h2 > Day 6 </h2>
                       <h4>Alleppey to Kovalam</h4>
                       <div> <strong>Morning:</strong> Disembark from the houseboat.</div>
                       <div> <strong>Afternoon:</strong> Drive to Kovalam.</div>
@@ -752,7 +753,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 7</u> </h2>
+                      <h2 > Day 7 </h2>
                       <h4>Kovalam</h4>
                       <div> <strong>Morning:</strong> Visit Lighthouse Beach.</div>
                       <div> <strong>Afternoon:</strong> Relax or try water sports.</div>
@@ -781,7 +782,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 8</u> </h2>
+                      <h2 > Day 8 </h2>
                       <h4>Kovalam to Trivandrum (Optional)</h4>
                       <div> <strong>Morning:</strong> Drive to Trivandrum.</div>
                       <div> <strong>Afternoon:</strong> Visit Padmanabhaswamy Temple and Napier Museum.</div>
@@ -796,7 +797,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 9</u> </h2>
+                      <h2 > Day 9 </h2>
                       <h4>Kovalam to Varkala (Optional)</h4>
                       <div> <strong>Morning:</strong> Drive to Varkala.</div>
                       <div> <strong>Afternoon:</strong> Relax on Varkala Beach.</div>
@@ -827,7 +828,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 10</u> </h2>
+                      <h2 > Day 10 </h2>
                       <h4>Departure</h4>
                       <div> <strong>Morning:</strong> Drive to Trivandrum or Kochi for departure.</div>
                       <div> <strong>Afternoon:</strong> Last-minute shopping or sightseeing.</div>
@@ -852,14 +853,14 @@ const India = () => {
                 <div className="row">
 
                   <div className="maintopic">
-                    <h2><u>North India (Amritsar and Himachal Pradesh) </u></h2>
+                    <h2>North India (Amritsar and Himachal Pradesh)</h2>
                     <h4>A 7-10 day tour package combining Amritsar and Himachal Pradesh can offer a blend of spiritual, cultural, and natural experiences. Here's a sample itinerary:</h4>
                   </div>
 
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 1</u> </h2>
+                      <h2 > Day 1 </h2>
                       <h4>Arrival in Amritsar</h4>
                       <div> <strong>Morning:</strong> Arrive at Amritsar Airport, transfer to hotel.</div>
                       <div> <strong>Afternoon:</strong> Visit Jallianwala Bagh.</div>
@@ -889,7 +890,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 2</u> </h2>
+                      <h2 > Day 2 </h2>
                       <h4>Amritsar</h4>
                       <div> <strong>Morning:</strong> Visit Durgiana Temple.</div>
                       <div> <strong>Afternoon:</strong> Explore local markets.</div>
@@ -902,7 +903,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 3</u> </h2>
+                      <h2 > Day 3 </h2>
                       <h4>Amritsar to Dharamshala</h4>
                       <div> <strong>Morning:</strong> Drive to Dharamshala.</div>
                       <div> <strong>Afternoon:</strong> Arrive and check-in at the hotel.</div>
@@ -934,7 +935,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 4</u> </h2>
+                      <h2 > Day 4 </h2>
                       <h4>Dharamshala</h4>
                       <div> <strong>Morning:</strong> Visit the Dalai Lama Temple.</div>
                       <div> <strong>Afternoon:</strong> Explore Bhagsu Falls.</div>
@@ -946,7 +947,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 5</u> </h2>
+                      <h2 > Day 5 </h2>
                       <h4>Dharamshala to Manali</h4>
                       <div> <strong>Morning:</strong> Drive to Manali.</div>
                       <div> <strong>Afternoon:</strong> Arrive and check-in at the hotel.</div>
@@ -976,7 +977,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 6</u> </h2>
+                      <h2 > Day 6 </h2>
                       <h4>Manali</h4>
                       <div> <strong>Morning:</strong> Visit Hidimba Devi Temple.</div>
                       <div> <strong>Afternoon:</strong> Explore Solang Valley.</div>
@@ -990,7 +991,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 7</u> </h2>
+                      <h2 > Day 7 </h2>
                       <h4>Manali to Shimla</h4>
                       <div> <strong>Morning:</strong> Drive to Shimla.</div>
                       <div> <strong>Afternoon:</strong> Check-in and rest.</div>
@@ -1019,7 +1020,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 8</u> </h2>
+                      <h2 > Day 8 </h2>
                       <h4>Shimla</h4>
                       <div> <strong>Morning:</strong> Visit Kufri and enjoy horse riding.</div>
                       <div> <strong>Afternoon:</strong> Explore the Shimla State Museum.</div>
@@ -1033,7 +1034,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 9</u> </h2>
+                      <h2 > Day 9 </h2>
                       <h4>Shimla to Dalhousie (Optional)</h4>
                       <div> <strong>Morning:</strong> Drive to Dalhousie.</div>
                       <div> <strong>Afternoon:</strong> Check-in and rest.</div>
@@ -1064,7 +1065,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 10</u> </h2>
+                      <h2 > Day 10 </h2>
                       <h4>Departure</h4>
                       <div> <strong>Morning:</strong> Drive back to Amritsar or Chandigarh for departure.</div>
                       <div> <strong>Afternoon:</strong> Last-minute shopping or sightseeing.</div>
@@ -1090,14 +1091,14 @@ const India = () => {
                 <div className="row">
 
                   <div className="maintopic">
-                    <h2><u>Golden Triangle Tour</u></h2>
+                    <h2>Golden Triangle Tour</h2>
                     <h4>A 5-7 day Golden Triangle tour package in India, covering Delhi, Agra, and Jaipur, can offer a rich blend of history, culture, and architecture. Here's a sample itinerary:</h4>
                   </div>
 
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 1</u> </h2>
+                      <h2 > Day 1 </h2>
                       <h4>Arrival in Delhi</h4>
                       <div> <strong>Morning:</strong> Arrive at Delhi Airport, transfer to hotel.</div>
                       <div> <strong>Afternoon:</strong> Visit India Gate and Humayun's Tomb.</div>
@@ -1127,7 +1128,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 2</u> </h2>
+                      <h2 > Day 2 </h2>
                       <h4>Delhi Sightseeing</h4>
                       <div> <strong>Morning:</strong> Visit Red Fort.</div>
                       <div> <strong>Afternoon:</strong> Explore Jama Masjid and Chandni Chowk.</div>
@@ -1140,7 +1141,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 3</u> </h2>
+                      <h2 > Day 3 </h2>
                       <h4>Delhi to Agra</h4>
                       <div> <strong>Morning:</strong> Drive to Agra.</div>
                       <div> <strong>Afternoon:</strong> Visit Agra Fort.</div>
@@ -1172,7 +1173,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 4</u> </h2>
+                      <h2 > Day 4 </h2>
                       <h4>Agra to Jaipur via Fatehpur Sikri</h4>
                       <div> <strong>Morning:</strong> Visit the Taj Mahal at sunrise.</div>
                       <div> <strong>Afternoon:</strong> Drive to Jaipur, visit Fatehpur Sikri en route.</div>
@@ -1185,7 +1186,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 5</u> </h2>
+                      <h2 > Day 5 </h2>
                       <h4>Jaipur Sightseeing</h4>
                       <div> <strong>Morning:</strong> Visit Amber Fort, enjoy an elephant ride.</div>
                       <div> <strong>Afternoon:</strong> Visit City Palace and Jantar Mantar.</div>
@@ -1215,7 +1216,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 6</u> </h2>
+                      <h2 > Day 6 </h2>
                       <h4>Jaipur to Delhi (Optional)</h4>
                       <div> <strong>Morning:</strong> Drive back to Delhi.</div>
                       <div> <strong>Afternoon:</strong> Explore the Underwater World Langkawi.</div>
@@ -1229,7 +1230,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 7</u> </h2>
+                      <h2 > Day 7 </h2>
                       <h4>Departure from Delhi (Optional)</h4>
                       <div> <strong>Morning:</strong> Leisure time or optional visit to Lotus Temple.</div>
                       <div> <strong>Afternoon:</strong> Transfer to Delhi Airport.</div>
@@ -1266,14 +1267,14 @@ const India = () => {
                 <div className="row">
 
                   <div className="maintopic">
-                    <h2><u>Rajasthan Heritage Tour</u></h2>
+                    <h2>Rajasthan Heritage Tour</h2>
                     <h4>A 10-day tour package in Rajasthan can offer a rich blend of history, culture, and natural beauty. Here's a sample itinerary:</h4>
                   </div>
 
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 1</u> </h2>
+                      <h2 > Day 1 </h2>
                       <h4>Arrival in Jaipur</h4>
                       <div> <strong>Morning:</strong> Arrive at Jaipur Airport, transfer to hotel.</div>
                       <div> <strong>Afternoon:</strong> Visit City Palace and Jantar Mantar.</div>
@@ -1303,7 +1304,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 2</u> </h2>
+                      <h2 > Day 2 </h2>
                       <h4>Jaipur</h4>
                       <div> <strong>Morning:</strong> Visit Amber Fort, enjoy an elephant ride.</div>
                       <div> <strong>Afternoon:</strong> Visit Nahargarh Fort.</div>
@@ -1316,7 +1317,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 3</u> </h2>
+                      <h2 > Day 3 </h2>
                       <h4>Jaipur to Jodhpur</h4>
                       <div> <strong>Morning:</strong> Drive to Jodhpur.</div>
                       <div> <strong>Afternoon:</strong> Check-in at the hotel.</div>
@@ -1348,7 +1349,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 4</u> </h2>
+                      <h2 > Day 4 </h2>
                       <h4>Jodhpur</h4>
                       <div> <strong>Morning:</strong> Visit Umaid Bhawan Palace.</div>
                       <div> <strong>Afternoon:</strong> Explore Jaswant Thada.</div>
@@ -1361,7 +1362,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 5</u> </h2>
+                      <h2 > Day 5 </h2>
                       <h4>Jodhpur to Udaipur via Ranakpur</h4>
                       <div> <strong>Morning:</strong> Drive to Udaipur, visit Ranakpur Jain Temple en route.</div>
                       <div> <strong>Afternoon:</strong> Continue drive to Udaipur.</div>
@@ -1391,7 +1392,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 6</u> </h2>
+                      <h2 > Day 6 </h2>
                       <h4>Udaipur</h4>
                       <div> <strong>Morning:</strong> Visit City Palace.</div>
                       <div> <strong>Afternoon:</strong> Explore Saheliyon-ki-Bari and Jagdish Temple.</div>
@@ -1405,7 +1406,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 7</u> </h2>
+                      <h2 > Day 7 </h2>
                       <h4>Udaipur to Pushkar</h4>
                       <div> <strong>Morning:</strong> Drive to Pushkar.</div>
                       <div> <strong>Afternoon:</strong> Visit Pushkar Lake and Brahma Temple.</div>
@@ -1435,7 +1436,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 8</u> </h2>
+                      <h2 > Day 8 </h2>
                       <h4>Pushkar to Jaisalmer</h4>
                       <div> <strong>Morning:</strong> Drive to Jaisalmer.</div>
                       <div> <strong>Afternoon:</strong> Check-in at the hotel.</div>
@@ -1449,7 +1450,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 9</u> </h2>
+                      <h2 > Day 9 </h2>
                       <h4>Jaisalmer</h4>
                       <div> <strong>Morning:</strong> Visit Patwon Ki Haveli and Gadisar Lake.</div>
                       <div> <strong>Afternoon:</strong> Drive to Sam Sand Dunes.</div>
@@ -1481,7 +1482,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 10</u> </h2>
+                      <h2 > Day 10 </h2>
                       <h4>Jaisalmer to Jaipur and Departure</h4>
                       <div> <strong>Morning:</strong> Drive back to Jaipur.</div>
                       <div> <strong>Afternoon:</strong> Last-minute shopping or sightseeing.</div>
@@ -1507,14 +1508,14 @@ const India = () => {
                 <div className="row">
 
                   <div className="maintopic">
-                    <h2><u>Andaman Beach Getaway</u></h2>
+                    <h2>Andaman Beach Getaway</h2>
                     <h4>A 5-7 day tour package in the Andaman Islands can offer a mix of relaxation, water sports, and natural beauty. Here's a sample itinerary:</h4>
                   </div>
 
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 1</u> </h2>
+                      <h2 > Day 1 </h2>
                       <h4>Arrival in Port Blair</h4>
                       <div> <strong>Morning:</strong> Arrive at Port Blair Airport, transfer to hotel.</div>
                       <div> <strong>Afternoon:</strong> Visit Cellular Jail.</div>
@@ -1544,7 +1545,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 2</u> </h2>
+                      <h2 > Day 2 </h2>
                       <h4>Port Blair to Havelock Island</h4>
                       <div> <strong>Morning:</strong> Take a ferry to Havelock Island.</div>
                       <div> <strong>Afternoon:</strong> Check-in at the resort.</div>
@@ -1557,7 +1558,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 3</u> </h2>
+                      <h2 > Day 3 </h2>
                       <h4>Havelock Island</h4>
                       <div> <strong>Morning:</strong> Scuba diving or snorkeling at Elephant Beach.</div>
                       <div> <strong>Afternoon:</strong> Leisure time or optional water activities.</div>
@@ -1589,7 +1590,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 4</u> </h2>
+                      <h2 > Day 4 </h2>
                       <h4>Havelock to Neil Island</h4>
                       <div> <strong>Morning:</strong> Take a ferry to Neil Island.</div>
                       <div> <strong>Afternoon:</strong> Visit Bharatpur Beach and Laxmanpur Beach.</div>
@@ -1602,7 +1603,7 @@ const India = () => {
                   <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                     <div className="CommonTripDetails">
-                      <h2 > <u>Day 5</u> </h2>
+                      <h2 > Day 5 </h2>
                       <h4>Neil Island to Port Blair</h4>
                       <div> <strong>Morning:</strong> Visit Natural Bridge.</div>
                       <div> <strong>Afternoon:</strong> Take a ferry back to Port Blair.</div>
@@ -1632,7 +1633,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 6</u> </h2>
+                      <h2 > Day 6 </h2>
                       <h4>Day Trip to Ross Island (Optional)</h4>
                       <div> <strong>Morning:</strong> Take a boat to Ross Island.</div>
                       <div> <strong>Afternoon:</strong> Explore the island and its historical ruins.</div>
@@ -1646,7 +1647,7 @@ const India = () => {
 
                     <div className="CommonTripDetails">
 
-                      <h2 > <u>Day 7</u> </h2>
+                      <h2 > Day 7 </h2>
                       <h4>Departure</h4>
                       <div> <strong>Morning:</strong> Visit Chidiya Tapu if time allows.</div>
                       <div> <strong>Afternoon:</strong> Transfer to Port Blair Airport.</div>

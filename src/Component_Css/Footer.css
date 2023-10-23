@@ -3,7 +3,7 @@
     padding: 10px 20px;
 
     & .box6 {
-        
+
         & h3 {
             text-align: center;
             color: white;
@@ -11,11 +11,13 @@
 
         & ul {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             flex-wrap: wrap;
             margin-left: -20px;
+
             & li {
                 list-style: none;
+                margin-right: 20px;
                 text-align: center;
             }
 
@@ -25,21 +27,20 @@
             }
 
             & a:hover {
-                text-decoration: underline;
                 color: #116ffc;
                 transition: .3s;
             }
         }
 
         & i {
-            margin:0 10px 5px 0; 
+            margin: 0 5px 5px 0;
             border: 1px solid white;
             padding: 5px;
             border-radius: 50%;
         }
 
     }
-   
+
 
 }
 

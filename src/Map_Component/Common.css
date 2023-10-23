@@ -12,7 +12,7 @@
         }
     }
 
-    & h1 {
+    & .countryName {
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -20,6 +20,11 @@
         color: rgb(255, 253, 253);
         font-size: 3.5rem;
         left: 50%;
+
+        & .CountryBackground {
+            padding: 0px 5px;
+            background-color: rgba(0, 0, 0, .3);
+        }
     }
 }
 
@@ -164,6 +169,7 @@
 
 .tourInnerDetails {
     position: relative;
+    cursor: pointer;
 
     & .CommonPlaceName {
         font-weight: bold;

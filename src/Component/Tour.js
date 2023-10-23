@@ -49,7 +49,8 @@ const Tour = () => {
       </div>
 
       <div className="whatsapplogo">
-        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
       </div>
 
       <div className="tourDetails">
@@ -1782,6 +1783,7 @@ const Tour = () => {
           </svg>
 
         </div>
+      
 
         <div className="symbolDetails">
 
@@ -1794,7 +1796,7 @@ const Tour = () => {
           <label htmlFor="">South East Asia</label>
           <div className='green'></div>
           <label htmlFor="">Europe</label>
-          <div className='pink'></div>
+          <div className='LightBlue'></div>
           <label htmlFor="">Africa</label>
           <div className='darkbrown'></div>
         </div>

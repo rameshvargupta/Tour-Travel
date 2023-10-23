@@ -77,12 +77,20 @@ const Europe = () => {
                 </div>
             </div>
 
+            <div className="whatsapplogo">
+                <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+                </a><div className='whatapptext'>Contact Us</div>
+            </div>
+
             <div className="TopMainImage">
                 <div className="Image">
                     <img className='img-fluid' src="./Images/Europe/SAday1.jpg" alt="" />
                 </div>
 
-                <h1>EUROPE</h1>
+                <div className='countryName'>
+                    <div className='CountryBackground'><h1>EUROPE</h1></div>
+                </div>
+
             </div>
 
             <div className="CountryTour">
@@ -109,7 +117,7 @@ const Europe = () => {
                         <div class="accordion-item">
                             <h2 class="accordion-header">
                                 <button onClick={() => setSelectDetails('defaultshowdetails')} class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Western European Trio
+                                    Western European Trio
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -162,7 +170,7 @@ const Europe = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Classic Europe")} onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Europe/london.jpg" alt="" />
@@ -191,7 +199,7 @@ const Europe = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Western European Trio")} onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Europe/paris.jpg" alt="" />
                                             </div>
@@ -221,7 +229,7 @@ const Europe = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Switzerland and Austria")} onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Europe/switzerland.webp" alt="" />
                                             </div>
@@ -264,14 +272,14 @@ const Europe = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Classic Europe (London, Paris, Rome)</u></h2>
+                                        <h2>Classic Europe (London, Paris, Rome)</h2>
                                         <h4>A 7-day tour package in the Classic Europe can offer a perfect blend of relaxation, adventure, and luxury. Here's a sample itinerary for a 7-day tour package in the Classic Europe:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in London</h4>
                                             <div> <strong>Morning:</strong> Arrive at Heathrow Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Arrive at Heathrow Airport, transfer to hotel.</div>
@@ -303,7 +311,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>London</h4>
                                             <div> <strong>Morning:</strong> Breakfast at the resort.</div>
                                             <div> <strong>Afternoon:</strong> Explore Westminster Abbey and Big Ben.</div>
@@ -316,7 +324,7 @@ const Europe = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>London to Paris</h4>
                                             <div> <strong>Morning:</strong> Take the Eurostar to Paris.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Louvre Museum.</div>
@@ -348,7 +356,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Paris</h4>
                                             <div> <strong>Morning:</strong> Eiffel Tower visit.</div>
                                             <div> <strong>Afternoon:</strong> Eiffel Tower visit.</div>
@@ -360,7 +368,7 @@ const Europe = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Paris to Rome</h4>
                                             <div> <strong>Morning:</strong> Flight to Rome.</div>
                                             <div> <strong>Afternoon:</strong> Flight to Rome.</div>
@@ -390,7 +398,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Rome</h4>
                                             <div> <strong>Morning:</strong> Vatican City and St. Peter's Basilica.</div>
                                             <div> <strong>Afternoon:</strong> Sistine Chapel and Vatican Museums.</div>
@@ -403,7 +411,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Departure from Rome</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping.</div>
                                             <div> <strong>Afternoon:</strong> Last-minute shopping.</div>
@@ -435,14 +443,14 @@ const Europe = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Western European Trio Exploration</u></h2>
+                                        <h2>Western European Trio Exploration</h2>
                                         <h4>A 7-day tour package covering Paris, Amsterdam, and Brussels can offer a rich blend of history, culture, and modernity. Here's a sample itinerary broken down into morning, afternoon, and evening activities:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Paris</h4>
                                             <div> <strong>Morning:</strong> Arrive at Charles de Gaulle Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Louvre Museum.</div>
@@ -472,7 +480,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Paris Sightseeing</h4>
                                             <div> <strong>Morning:</strong> Visit the Eiffel Tower.</div>
                                             <div> <strong>Afternoon:</strong> Explore Montmartre and Sacré-Cœur Basilica.</div>
@@ -485,7 +493,7 @@ const Europe = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Paris to Amsterdam</h4>
                                             <div> <strong>Morning:</strong> Take a Thalys train to Amsterdam.</div>
                                             <div> <strong>Afternoon:</strong> Check-in at the hotel, then visit Anne Frank House.</div>
@@ -517,7 +525,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Amsterdam Sightseeing</h4>
                                             <div> <strong>Morning:</strong> Visit Rijksmuseum.</div>
                                             <div> <strong>Afternoon:</strong> Explore Vondelpark or take a bike tour.</div>
@@ -529,7 +537,7 @@ const Europe = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Amsterdam to Brussels</h4>
                                             <div> <strong>Morning:</strong> Take a train to Brussels.</div>
                                             <div> <strong>Afternoon:</strong> Visit Atomium and Mini-Europe.</div>
@@ -558,7 +566,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Brussels Sightseeing</h4>
                                             <div> <strong>Morning:</strong> Visit the Royal Palace.</div>
                                             <div> <strong>Afternoon:</strong> Explore Magritte Museum or Comic Strip Center.</div>
@@ -572,7 +580,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Brussels to Paris and Departure</h4>
                                             <div> <strong>Morning:</strong> Take a train back to Paris.</div>
                                             <div> <strong>Afternoon:</strong> Last-minute shopping or visit Champs-Élysées.</div>
@@ -603,14 +611,14 @@ const Europe = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Switzerland and Austria</u></h2>
+                                        <h2>Switzerland and Austria</h2>
                                         <h4>A 7-day tour package in Switzerland and Austria can offer a well-rounded experience of the city's historical sites, natural, cultural attractions, and modern amenities. Here's a sample itinerary for a 7-day tour package in Switzerland and Austria:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Zurich</h4>
                                             <div> <strong>Morning:</strong> Arrive at Zurich Airport, transfer to Lucerne.</div>
                                             <div> <strong>Afternoon:</strong> Visit Chapel Bridge and Water Tower.</div>
@@ -640,7 +648,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Lucerne</h4>
                                             <div> <strong>Morning:</strong> Mount Pilatus day trip.</div>
                                             <div> <strong>Afternoon:</strong> Explore the mountain.</div>
@@ -653,7 +661,7 @@ const Europe = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Lucerne to Interlaken</h4>
                                             <div> <strong>Morning:</strong> Train to Interlaken.</div>
                                             <div> <strong>Afternoon:</strong> Visit Harder Kulm.</div>
@@ -685,7 +693,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Interlaken</h4>
                                             <div> <strong>Morning:</strong> Jungfraujoch day trip.</div>
                                             <div> <strong>Afternoon:</strong> Explore the "Top of Europe.</div>
@@ -698,7 +706,7 @@ const Europe = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Interlaken to Salzburg</h4>
                                             <div> <strong>Morning:</strong> Train to Salzburg.</div>
                                             <div> <strong>Afternoon:</strong> Visit Hohensalzburg Fortress.</div>
@@ -728,7 +736,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Salzburg</h4>
                                             <div> <strong>Morning:</strong> Sound of Music Tour.</div>
                                             <div> <strong>Afternoon:</strong> Visit Mirabell Palace.</div>
@@ -742,7 +750,7 @@ const Europe = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4> Departure from Salzburg</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Salzburg Airport.</div>

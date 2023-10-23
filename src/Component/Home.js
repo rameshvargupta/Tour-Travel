@@ -58,7 +58,8 @@ const Home = () => {
       </div>
 
       <div className="whatsapplogo">
-        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
       </div>
 
       <div className="main">
@@ -147,15 +148,15 @@ const Home = () => {
             </div>
 
             <div className="InputControl">
-              <label htmlFor="Adult">No. Of Adult</label>
-              <input type="text" name='Number Of Adult' id='Adult' />
+              <label htmlFor="Adult">No. of Adults</label>
+              <input type="text" name='Number Of Adults' id='Adult' />
             </div>
           </div>
 
           <div className="formControl">
 
             <div className="InputControl">
-              <label htmlFor="children">No. Of Children </label>
+              <label htmlFor="children">No. of Children </label>
               <input type="text" name='Number Of Children' id='children' />
             </div>
 
@@ -164,23 +165,32 @@ const Home = () => {
               <select name="Tour Name" id="StyleDuration">
                 <option value="">---</option>
                 <option value="" disabled id='domestic'>Domestic Tour</option>
-                <option value="Rishikesh">Rishikesh</option>
-                <option value="Shimla-Manali">Shimla-Manali</option>
+                <option value="North-East">North-East</option>
                 <option value="Kerala">Kerala</option>
-                <option value="Vaishno Devi-Grand Himanchal">Vaishno Devi-Grand Himanchal</option>
-                <option value="Uttrakhand">Uttrakhand</option>
-                <option value="Royal Rajastan">Royal Rajastan</option>
-                <option value="Himanchal-Vaishno Devi-kasmir Tour">Himanchal-Vaishno Devi-kasmir Tour</option>
-                <option value="Heritage Rajastan">Heritage Rajastan</option>
-                <option value="Heavenly Kashmir">Heavenly Kashmir</option>
-                <option value="Golden Kasmir">Golden Kasmir</option>
-                <option value="Golden triangle">Golden triangle</option>
-                <option value="golden Temple-Mata Vaishno Devi-kashmir">golden Temple-Mata Vaishno Devi-kashmir</option>
+                <option value="North India">North India</option>
+                <option value="Golden Triangle">Golden Triangle</option>
+                <option value="Rajastan">Rajastan</option>
                 <option value="Andaman">Andaman</option>
+
                 <option value="" disabled id='international'>International Tour</option>
-                <option value="Singapore">Singapore</option>
-                <option value="Bali">Bali</option>
-                <option value="A Week's Escape">A Week's Escape</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Singapore">Malaysia</option>
+                <option value="Malaysia">Singapore</option>
+                <option value="Maldives">Maldives</option>
+                <option value="Almaty">Almaty</option>
+                <option value="Tashkent">Tashkent</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Baku">Baku</option>
+                <option value="Tashkent">Classic Europe</option>
+                <option value="Tashkent">Western European Trio</option>
+                <option value="Tashkent">Switzerland and Austria</option>
               </select>
             </div>
           </div>
@@ -207,265 +217,285 @@ const Home = () => {
       </div>
 
       <div className="container cont1">
-        <h1 style={{ textAlign: "center" }} className='my-4'> <u>CUSTOMIZE YOUR TRIP</u></h1>
+        <h1 style={{ textAlign: "center" }} className='my-4'>Best Selling Packages</h1>
 
         <div className="row">
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" >
+
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/India/Golden triangle.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>Golden Triangle</p>
-                    <div>India</div>
+              <Link to={'/India'}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/India/Golden triangle.jpg" alt="" />
                   </div>
-                  <hr />
 
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 8400
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>Golden Triangle</p>
+                      <div>India</div>
                     </div>
+                    <hr />
+
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+
+                    <hr />
+                    <p className='homep'>Delhi: Red Fort, Qutub Minar, India Gate Agra: Taj Mahal, Agra Fort Jaipur: Amber Fort, City Palace, Hawa Mahal</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+
+                  </figcaption>
+                </figure>
+              </Link>
+            </div>
+
+
+          </div>
+
+          <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
+            <div className="homePage">
+              <Link to={"/India"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/India/Northeast.jpg" alt="" />
                   </div>
 
-                  <hr />
-                  <p className='homep'>Delhi: Red Fort, Qutub Minar, India Gate Agra: Taj Mahal, Agra Fort Jaipur: Amber Fort, City Palace, Hawa Mahal</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>North-East Explorer</p>
+                      <div>India</div>
+                    </div>
+                    <hr />
 
-                </figcaption>
-              </figure>
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+
+                    <hr />
+                    <p className='homep'>Assam: Kaziranga National Park, Majuli Island Meghalaya: Living Root Bridges, Cherrapunji Sikkim: Gangtok, Nathula Pass</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/India/Northeast.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>North-East Explorer</p>
-                    <div>India</div>
+              <Link to={"/India"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/India/Himachal.jpg" alt="" />
                   </div>
-                  <hr />
 
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 9400
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>North India Highlights</p>
+                      <div>India</div>
                     </div>
-                  </div>
+                    <hr />
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+                    <hr />
+                    <p className='homep'>Amritsar: Golden Temple, Wagah Border Dharamshala: McLeod Ganj, Bhagsu Falls Dalhousie: Khajjiar, Kalatop Wildlife Sanctuary</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                  <hr />
-                  <p className='homep'>Assam: Kaziranga National Park, Majuli Island Meghalaya: Living Root Bridges, Cherrapunji Sikkim: Gangtok, Nathula Pass</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
-
-                </figcaption>
-              </figure>
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/India/Himachal.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>North India Highlights</p>
-                    <div>India</div>
+              <Link to={"/India"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/kerala.jpg" alt="" />
                   </div>
-                  <hr />
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 7800
+
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>Kerala</p>
+                      <div>India</div>
                     </div>
-                  </div>
-                  <hr />
-                  <p className='homep'>Amritsar: Golden Temple, Wagah Border Dharamshala: McLeod Ganj, Bhagsu Falls Dalhousie: Khajjiar, Kalatop Wildlife Sanctuary</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                </figcaption>
-              </figure>
+                    <hr />
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+                    <hr />
+                    <p className='homep'>Kochi: Fort Kochi, Chinese fishing nets Alleppey: Houseboat stay in the backwaters Varkala or Kovalam: Beach relaxation</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/kerala.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>Kerala</p>
-                    <div>India</div>
+              <Link to={"/India"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/andaman.jpg" alt="" />
                   </div>
 
-                  <hr />
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 4700
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>Andaman Nicobar</p>
+                      <div>India</div>
                     </div>
-                  </div>
-                  <hr />
-                  <p className='homep'>Kochi: Fort Kochi, Chinese fishing nets Alleppey: Houseboat stay in the backwaters Varkala or Kovalam: Beach relaxation</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+                    <hr />
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+                    <hr />
+                    <p className='homep'>Port Blair: Cellular Jail, Corbyn's Cove Beach Havelock Island: Radhanagar Beach, Elephant Beach Neil Island: Natural Bridge, Bharatpur Beach</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                </figcaption>
-              </figure>
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/andaman.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>Andaman Nicobar</p>
-                    <div>India</div>
+              <Link to={"/India"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/rajsthan2.jpg" alt="" />
                   </div>
-                  <hr />
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 8500
+
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>The Royal Rajasthan</p>
+                      <div>India</div>
                     </div>
-                  </div>
-                  <hr />
-                  <p className='homep'>Port Blair: Cellular Jail, Corbyn's Cove Beach Havelock Island: Radhanagar Beach, Elephant Beach Neil Island: Natural Bridge, Bharatpur Beach</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                </figcaption>
-              </figure>
+                    <hr />
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+                    <hr />
+                    <p className='homep'>Udaipur: City Palace, Lake Pichola Jodhpur: Mehrangarh Fort, Umaid Bhawan Palace Jaisalmer: Desert Safari, Jaisalmer Fort</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/rajsthan2.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>The Royal Rajasthan</p>
-                    <div>India</div>
+              <Link to={"/Africa"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/Africa/Kenya.jpg" alt="" />
                   </div>
 
-                  <hr />
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 5700
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>Kenya</p>
+                      <div>Kenya</div>
                     </div>
-                  </div>
-                  <hr />
-                  <p className='homep'>Udaipur: City Palace, Lake Pichola Jodhpur: Mehrangarh Fort, Umaid Bhawan Palace Jaisalmer: Desert Safari, Jaisalmer Fort</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+                    <hr />
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+                    <hr />
+                    <p className='homep'>Nairobi's Giraffe Centre and David Sheldrick Wildlife Trust Maasai Mara National Reserve for the Great Migration Amboseli National Park.</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                </figcaption>
-              </figure>
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/Africa/Kenya.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>Kenya</p>
-                    <div>Kenya</div>
+              <Link to={"/SouthEastAsia"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/SouthEastAsia/Thailand.jpg" alt="" />
                   </div>
-                  <hr />
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 18000
+
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>Thailand</p>
+                      <div>Thailand</div>
                     </div>
-                  </div>
-                  <hr />
-                  <p className='homep'>Nairobi's Giraffe Centre and David Sheldrick Wildlife Trust Maasai Mara National Reserve for the Great Migration Amboseli National Park.</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+                    <hr />
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
+                    </div>
+                    <hr />
+                    <p className='homep'>Explore the bustling streets of Bangkok. Visit ancient temples in Chiang Mai. Relax on the beaches of Koh Samui and Phi Phi Islands.</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                </figcaption>
-              </figure>
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>
 
           <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
             <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/SouthEastAsia/Thailand.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>Thailand</p>
-                    <div>Thailand</div>
+              <Link to={"/MiddleEast"}>
+                <figure>
+                  <div className="homeImage">
+                    <img className="img-fluid" src="./Images/MiddleEast/MiddleEastMain.jpg" alt="" />
                   </div>
-                  <hr />
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 21000
+
+                  <figcaption>
+                    <div className="country">
+                      <p className='city'>Dubai</p>
+                      <div>UAE</div>
                     </div>
-                  </div>
-                  <hr />
-                  <p className='homep'>Explore the bustling streets of Bangkok. Visit ancient temples in Chiang Mai. Relax on the beaches of Koh Samui and Phi Phi Islands.</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                </figcaption>
-              </figure>
-            </div>
-
-          </div>
-
-          <div className="col-sm-6 col-md-6 col-lg-4" data-aos="fade-up">
-            <div className="homePage">
-              <figure>
-                <div className="homeImage">
-                  <img className="img-fluid" src="./Images/MiddleEast/MiddleEastMain.jpg" alt="" />
-                </div>
-
-                <figcaption>
-                  <div className="country">
-                    <p className='city'>Dubai</p>
-                    <div>UAE</div>
-                  </div>
-
-                  <hr />
-                  <div className="homeprice">
-                    <div className="prices">
-                      Starting From Rs. 35000
+                    <hr />
+                    <div className="homeprice">
+                      <div className="prices">
+                        Contact us now for best price
+                      </div>
                     </div>
-                  </div>
-                  <hr />
-                  <p className='homep'>Stand atop the Burj Khalifa. Shop at the Dubai Mall and Gold Souk. Enjoy a desert safari with dune bashing. Visit the Dubai Miracle Garden.</p>
-                  <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
+                    <hr />
+                    <p className='homep'>Stand atop the Burj Khalifa. Shop at the Dubai Mall and Gold Souk. Enjoy a desert safari with dune bashing. Visit the Dubai Miracle Garden.</p>
+                    <button>View Details <i class="fa-solid fa-circle-info"></i> </button>
 
-                </figcaption>
-              </figure>
+                  </figcaption>
+                </figure>
+              </Link>
             </div>
 
           </div>

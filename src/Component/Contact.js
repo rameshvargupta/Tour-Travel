@@ -56,25 +56,24 @@ const Contact = () => {
       </div>
 
       <div className="whatsapplogo">
-        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" /></a>
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
       </div>
 
-      <div className="contactMain">
-        <div className="contactImage" data-aos="fade-up">
-          <img src="./Images/contact1.jpg" alt="" />
+      <div className="ContactUs">
+        <div className="Image" data-aos="fade-up">
+          <img src="./Images/contact.jpg" alt="" />
         </div>
       </div>
 
       <div className="container">
-        <h1 className='my-5' style={{ textAlign: "center", color: " #05203c" }}> <u>We Would Love to Hear From You</u></h1>
+        <h1 className='my-4' style={{ textAlign: "center", color: " #05203c" }}>We Would Love to Hear From You</h1>
         <div className="row Contact_Main">
 
           <div className="col-sm-12 col-lg-6" data-aos='zoom-in-up'>
 
-
-
-            <form  action="https://formspree.io/f/meqbjajq"
-              method="POST" className='ContactInputData mb-3'>
+            <form action="https://formspree.io/f/meqbjajq"
+              method="POST" className='ContactInputData'>
 
               <div className="formControl">
 
@@ -122,15 +121,15 @@ const Contact = () => {
                 </div>
 
                 <div className="InputControl">
-                  <label htmlFor="Adult">No. Of Adult</label>
-                  <input type="text" name='Number Of Adult' id='Adult' />
+                  <label htmlFor="Adult">No. of Adults</label>
+                  <input type="text" name='Number Of Adults' id='Adult' />
                 </div>
               </div>
 
               <div className="formControl">
 
                 <div className="InputControl">
-                  <label htmlFor="children">No. Of Children </label>
+                  <label htmlFor="children">No. of Children </label>
                   <input type="text" name='Number Of Children' id='children' />
                 </div>
 
@@ -139,23 +138,32 @@ const Contact = () => {
                   <select name="Tour Name" id="StyleDuration">
                     <option value="">---</option>
                     <option value="" disabled id='domestic'>Domestic Tour</option>
-                    <option value="Rishikesh">Rishikesh</option>
-                    <option value="Shimla-Manali">Shimla-Manali</option>
+                    <option value="North-East">North-East</option>
                     <option value="Kerala">Kerala</option>
-                    <option value="Vaishno Devi-Grand Himanchal">Vaishno Devi-Grand Himanchal</option>
-                    <option value="Uttrakhand">Uttrakhand</option>
-                    <option value="Royal Rajastan">Royal Rajastan</option>
-                    <option value="Himanchal-Vaishno Devi-kasmir Tour">Himanchal-Vaishno Devi-kasmir Tour</option>
-                    <option value="Heritage Rajastan">Heritage Rajastan</option>
-                    <option value="Heavenly Kashmir">Heavenly Kashmir</option>
-                    <option value="Golden Kasmir">Golden Kasmir</option>
-                    <option value="Golden triangle">Golden triangle</option>
-                    <option value="golden Temple-Mata Vaishno Devi-kashmir">golden Temple-Mata Vaishno Devi-kashmir</option>
+                    <option value="North India">North India</option>
+                    <option value="Golden Triangle">Golden Triangle</option>
+                    <option value="Rajastan">Rajastan</option>
                     <option value="Andaman">Andaman</option>
+
                     <option value="" disabled id='international'>International Tour</option>
-                    <option value="Singapore">Singapore</option>
-                    <option value="Bali">Bali</option>
-                    <option value="A Week's Escape">A Week's Escape</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Singapore">Malaysia</option>
+                    <option value="Malaysia">Singapore</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Almaty">Almaty</option>
+                    <option value="Tashkent">Tashkent</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Baku">Baku</option>
+                    <option value="Tashkent">Classic Europe</option>
+                    <option value="Tashkent">Western European Trio</option>
+                    <option value="Tashkent">Switzerland and Austria</option>
                   </select>
                 </div>
               </div>

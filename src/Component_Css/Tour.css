@@ -32,7 +32,7 @@ svg path:hover {
 }
 
 #europe {
-    fill: rgb(215, 43, 77);
+    fill: #ADD8E6;
 }
 
 #sEast {
@@ -86,8 +86,8 @@ svg path:hover {
         background-color: rgb(59, 178, 59);
     }
 
-    & .pink {
-        background-color: rgb(215, 43, 77);
+    & .LightBlue {
+        background-color: #ADD8E6;
     }
 
     & .orange {
@@ -100,13 +100,12 @@ svg path:hover {
 }
 
 .mapHeading h1 {
-    color: rgb(108, 108, 108);
+    color: #120a39;
     font-size: 45px;
 }
 
 @media only screen and (max-width:450px) {
     .mapHeading h1 {
-        color: rgb(108, 108, 108);
         font-size: 30px;
     }
 }

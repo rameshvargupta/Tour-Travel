@@ -102,6 +102,10 @@
 
 .homePage {
     margin-bottom: 20px;
+    & a{
+        text-decoration: none;
+        color: #05203c;
+    }
 
     & .homeImage {
         width: 100%;
@@ -140,7 +144,7 @@
 
     & .prices {
         font-weight: 600;
-        color: #05203c;
+        color: #120a39;
     }
 }
 
@@ -207,7 +211,7 @@
 }
 
 .cont2 {
-    background-color: #05203c;
+    background-color:#120a39;
     padding: 10px 20px;
     color: white;
 

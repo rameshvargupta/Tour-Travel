@@ -48,6 +48,11 @@ const Privacy = () => {
 
         </div>
       </div>
+      
+      <div className="whatsapplogo">
+        <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+        </a><div className='whatapptext'>Contact Us</div>
+      </div>
 
       <div className="privacy">
 
@@ -57,7 +62,7 @@ const Privacy = () => {
       </div>
       <div className="container PCont my-4">
 
-        <h1 className='mb-4'> <u>PRIVACY POLICY</u> </h1>
+        <h1 className='mb-4 text-center'>Privacy Policy</h1>
 
         <p>Globe trotting Hospitality Pvt Ltd respects your privacy and recognizes the need to protect the personally identifiable information (any information by which you can be identified, such as name, address, and telephone number) you share with us. We would like to assure you that we follow appropriate standards when it comes to protecting your privacy on our websites. With specific reference to booking/e-commerce transactions, Globe trotting Hospitality Pvt Ltd collects the following personal sensitive information from you while transacting through India Globe trotting Pvt Ltd such as Name, Sex, Phone Number, Address, Credit Card details, Date of birth in case of a child. Customer name, address, phone number, traveller’s name and age are shared with applicable service providers like the airlines, hotels, guides, drivers etc., for the purpose of reservation and booking the services for the customer/traveller. Information like Credit Card Details and Net Banking Details are usually collected directly by the payment gateways and banks and not by Globe Trotting Hospitality Pvt Ltd. Information like Mobile no, e-mail address and postal address may be used for promotional purposes, unless the customer/user “opts-out” of such use. If you choose not to share this information, you can still visit the Yatra website, but you may be unable to access certain options, offers and services.
         </p>

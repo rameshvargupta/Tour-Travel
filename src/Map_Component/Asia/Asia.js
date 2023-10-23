@@ -78,12 +78,19 @@ const Asia = () => {
                 </div>
             </div>
 
+            <div className="whatsapplogo">
+                <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+                </a><div className='whatapptext'>Contact Us</div>
+            </div>
+
             <div className="TopMainImage">
                 <div className="Image">
                     <img className='img-fluid' src="./Images/Asia/Asia Mainpage.jpg" alt="" />
                 </div>
 
-                <h1>ASIA</h1>
+                <div className='countryName'>
+                    <div className='CountryBackground'><h1>ASIA</h1></div>
+                </div>
             </div>
 
             <div className="CountryTour">
@@ -163,7 +170,7 @@ const Asia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Maldives")} onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Asia/Maldives.jpeg" alt="" />
@@ -192,7 +199,7 @@ const Asia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Almaty")} onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Asia/almaty.jpg" alt="" />
                                             </div>
@@ -222,7 +229,7 @@ const Asia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Tashkent")} onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Asia/tashkent.jpg" alt="" />
                                             </div>
@@ -265,14 +272,14 @@ const Asia = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Maldives Romatic Getaway</u></h2>
+                                        <h2>Maldives Romatic Getaway</h2>
                                         <h4>A 7-day tour package in the Maldives can offer a perfect blend of relaxation, adventure, and luxury. Here's a sample itinerary for a 7-day tour package in the Maldives:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Malé</h4>
                                             <div> <strong>Morning:</strong> Arrive at Malé International Airport, transfer to your resort via speedboat or seaplane.</div>
                                             <div> <strong>Afternoon:</strong> Check-in and settle into your overwater bungalow or beach villa.</div>
@@ -304,7 +311,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Relax and Unwind</h4>
                                             <div> <strong>Morning:</strong> Breakfast at the resort.</div>
                                             <div> <strong>Afternoon:</strong> Relax on the beach or take a dip in the lagoon.</div>
@@ -317,7 +324,7 @@ const Asia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Snorkeling and Water Sports</h4>
                                             <div> <strong>Morning:</strong> Guided snorkeling tour to explore the coral reefs.</div>
                                             <div> <strong>Afternoon:</strong> Choose from water sports like jet skiing, windsurfing, or kayaking.</div>
@@ -349,7 +356,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Island Hopping</h4>
                                             <div> <strong>Morning:</strong> Visit a local island to experience Maldivian culture.</div>
                                             <div> <strong>Afternoon:</strong> Picnic lunch on a deserted island.</div>
@@ -361,7 +368,7 @@ const Asia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Underwater Exploration</h4>
                                             <div> <strong>Morning:</strong> Optional scuba diving excursion or visit to an underwater restaurant.</div>
                                             <div> <strong>Afternoon:</strong> Relax at the resort or engage in more water sports.</div>
@@ -391,7 +398,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Leisure and Optional Activities</h4>
                                             <div> <strong>Morning:</strong> Free time for leisure or optional activities like fishing.</div>
                                             <div> <strong>Afternoon:</strong> Optional spa treatments or cooking classes to learn Maldivian cuisine.</div>
@@ -404,7 +411,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Breakfast at the resort.</div>
                                             <div> <strong>Afternoon:</strong> Check-out and transfer to Malé International Airport for departure.</div>
@@ -438,14 +445,14 @@ const Asia = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Almaty Exploration</u></h2>
+                                        <h2>Almaty Exploration</h2>
                                         <h4>A 7-day tour package in Almaty, Kazakhstan, can offer a balanced mix of city exploration, cultural experiences, and natural beauty. Here's a sample itinerary for a 7-day tour package in Almaty:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Almaty</h4>
                                             <div> <strong>Morning:</strong> Arrive at Almaty International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -475,7 +482,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Almaty City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit Panfilov Park and Zenkov Cathedral.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Central State Museum.</div>
@@ -488,7 +495,7 @@ const Asia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Day Trip to Big Almaty Lake</h4>
                                             <div> <strong>Morning:</strong> Drive to Big Almaty Lake.</div>
                                             <div> <strong>Afternoon:</strong> Enjoy hiking and photography around the lake.</div>
@@ -520,7 +527,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Medeu and Shymbulak</h4>
                                             <div> <strong>Morning:</strong> Visit the Medeu Ice Skating Rink.</div>
                                             <div> <strong>Afternoon:</strong> Take a cable car to Shymbulak Ski Resort for mountain views.</div>
@@ -532,7 +539,7 @@ const Asia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Kok-Tobe Hill and Shopping</h4>
                                             <div> <strong>Morning:</strong> Take a cable car to Kok-Tobe Hill for panoramic city views.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Green Bazaar and Mega Almaty Mall for shopping.</div>
@@ -561,7 +568,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Day Trip to Charyn Canyon</h4>
                                             <div> <strong>Morning:</strong> Drive to Charyn Canyon.</div>
                                             <div> <strong>Afternoon:</strong> Explore the canyon and enjoy a picnic lunch.</div>
@@ -575,7 +582,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Free time for last-minute shopping or optional activities.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Almaty International Airport for departure.</div>
@@ -611,14 +618,14 @@ const Asia = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Tashkent Highlights</u></h2>
+                                        <h2>Tashkent Highlights</h2>
                                         <h4>A 7-day tour package in Tashkent, Uzbekistan, can offer a well-rounded experience of the city's historical sites, cultural attractions, and modern amenities. Here's a sample itinerary for a 7-day tour package in Tashkent:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Tashkent</h4>
                                             <div> <strong>Morning:</strong> Arrive at Tashkent International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -648,7 +655,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Tashkent City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit Amir Timur Square and Museum.</div>
                                             <div> <strong>Afternoon:</strong> Explore Khast Imam Complex and Chorsu Bazaar.</div>
@@ -661,7 +668,7 @@ const Asia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Day Trip to Samarkand</h4>
                                             <div> <strong>Morning:</strong> Take a train to Samarkand.</div>
                                             <div> <strong>Afternoon:</strong> Visit Registan Square and Gur-e-Amir Mausoleum.</div>
@@ -693,7 +700,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Modern Tashkent</h4>
                                             <div> <strong>Morning:</strong> Visit Independence Square.</div>
                                             <div> <strong>Afternoon:</strong> Explore Tashkent Tower and take a ride on the Tashkent Metro.</div>
@@ -706,7 +713,7 @@ const Asia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Day Trip to Charvak Lake</h4>
                                             <div> <strong>Morning:</strong> Drive to Charvak Lake.</div>
                                             <div> <strong>Afternoon:</strong> Enjoy water activities or hiking around the lake.</div>
@@ -736,7 +743,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Cultural Experiences</h4>
                                             <div> <strong>Morning:</strong> Visit the Museum of Applied Arts.</div>
                                             <div> <strong>Afternoon:</strong> Explore local madrasahs and mosques.</div>
@@ -750,7 +757,7 @@ const Asia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4> Departure</h4>
                                             <div> <strong>Morning:</strong> Free time for last-minute shopping or optional activities.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Tashkent International Airport for departure.</div>

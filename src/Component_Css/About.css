@@ -16,14 +16,10 @@
     object-fit: cover;
 }
 
-.homeDetails {
-    color: #05203c;
-    line-height: 30px;
-}
 
 .aboutImage {
     width: 100%;
-    height: 500px;
+    height: 320px;
 }
 
 .cont3 {
@@ -89,12 +85,11 @@
     object-fit: contain;
 }
 
-.teamDetails {
-    line-height: 35px;
-}
 
-.founderDetails {
-    line-height: 35px;
+.founderDetails, .teamDetails, .homeDetails {
+    color: #05203c;
+    line-height: 30px;
+    text-align: justify;
 }
 
 .founderImage {

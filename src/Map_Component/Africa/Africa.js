@@ -79,12 +79,19 @@ const Africa = () => {
                 </div>
             </div>
 
+            <div className="whatsapplogo">
+                <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+                </a><div className='whatapptext'>Contact Us</div>
+            </div>
+
             <div className="TopMainImage">
                 <div className="Image">
                     <img className='img-fluid' src="./Images/Africa/AfricamainPage.jpg" alt="" />
                 </div>
 
-                <h1>AFRICA</h1>
+                <div className='countryName'>
+                    <div className='CountryBackground'><h1>AFRICA</h1></div>
+                </div>
 
             </div>
 
@@ -166,7 +173,7 @@ const Africa = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("South Africa")} onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Africa/South Africa.jpg" alt="" />
@@ -194,7 +201,7 @@ const Africa = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Kenya")} onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Africa/Kenya.jpg" alt="" />
                                             </div>
@@ -220,7 +227,7 @@ const Africa = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Zimbabwe")} onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/Africa/Zimbabwe.jpg" alt="" />
                                             </div>
@@ -259,14 +266,14 @@ const Africa = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>South Africa - 11 days</u></h2>
+                                        <h2>South Africa - 11 day Tour</h2>
                                         <h4>An 11-day tour package in South Africa can offer a diverse range of experiences, from wildlife safaris and cultural encounters to scenic beauty and urban exploration. Here's a sample itinerary for an 11-day tour package in South Africa:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Johannesburg</h4>
                                             <div> <strong>Morning:</strong> Arrive at O.R. Tambo International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -297,7 +304,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Johannesburg City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit the Apartheid Museum.</div>
                                             <div> <strong>Afternoon:</strong> Explore Soweto and the Mandela House.</div>
@@ -310,7 +317,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Johannesburg to Kruger National Park</h4>
                                             <div> <strong>Morning:</strong> Fly or drive to Kruger National Park.</div>
                                             <div> <strong>Afternoon:</strong> Afternoon game drive.</div>
@@ -342,7 +349,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Kruger Safari</h4>
                                             <div> <strong>Morning:</strong> Early morning game drive.</div>
                                             <div> <strong>Afternoon:</strong> Optional bush walk or another game drive.</div>
@@ -354,7 +361,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Kruger to Cape Town</h4>
                                             <div> <strong>Morning:</strong> Morning game drive or leisure time at the lodge.</div>
                                             <div> <strong>Afternoon:</strong> Fly to Cape Town.</div>
@@ -384,7 +391,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Cape Peninsula Tour</h4>
                                             <div> <strong>Morning:</strong> Drive to Cape Point via Chapman's Peak Drive.</div>
                                             <div> <strong>Afternoon:</strong> Visit the penguins at Boulders Beach.</div>
@@ -397,7 +404,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Cape Winelands</h4>
                                             <div> <strong>Morning:</strong> Drive to Stellenbosch.</div>
                                             <div> <strong>Afternoon:</strong> Wine tasting and lunch in Franschhoek.</div>
@@ -426,7 +433,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Cape Town City and Table Mountain</h4>
                                             <div> <strong>Morning:</strong> Visit Table Mountain.</div>
                                             <div> <strong>Afternoon:</strong> Explore the V&A Waterfront.</div>
@@ -441,7 +448,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Cape Town to Garden Route</h4>
                                             <div> <strong>Morning:</strong> Drive to Knysna via Mossel Bay.</div>
                                             <div> <strong>Afternoon:</strong> Explore Knysna Heads or take a lagoon cruise.</div>
@@ -472,7 +479,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Tsitsikamma National Park</h4>
                                             <div> <strong>Morning:</strong> Drive to Tsitsikamma National Park.</div>
                                             <div> <strong>Afternoon:</strong> Hiking or optional activities like bungee jumping.</div>
@@ -485,7 +492,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 11</u> </h2>
+                                            <h2 > Day 11 </h2>
                                             <h4>Return to Johannesburg and Departure</h4>
                                             <div> <strong>Morning:</strong> Drive to George Airport and fly back to Johannesburg.</div>
                                             <div> <strong>Afternoon:</strong> Last-minute shopping or optional activities.</div>
@@ -522,7 +529,7 @@ const Africa = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Kenya 10 day</u></h2>
+                                        <h2>Kenya 10-day Tour</h2>
                                         <h4>A 10-day tour package in Kenya can offer a rich blend of wildlife safaris, cultural experiences, and natural wonders. Here's a sample itinerary for a 10-day tour package in Kenya:
                                         </h4>
                                     </div>
@@ -530,7 +537,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Nairobi</h4>
                                             <div> <strong>Morning:</strong> Arrive at Jomo Kenyatta International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -560,7 +567,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Nairobi City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit the Giraffe Centre.</div>
                                             <div> <strong>Afternoon:</strong> Explore the David Sheldrick Wildlife Trust to see orphaned elephants.</div>
@@ -573,7 +580,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Amboseli National Park</h4>
                                             <div> <strong>Morning:</strong> Drive to Amboseli National Park.</div>
                                             <div> <strong>Afternoon:</strong> Game drive with views of Mount Kilimanjaro.</div>
@@ -605,7 +612,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Amboseli to Lake Nakuru</h4>
                                             <div> <strong>Morning:</strong> Another game drive in Amboseli.</div>
                                             <div> <strong>Afternoon:</strong> Drive to Lake Nakuru.</div>
@@ -617,7 +624,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Lake Nakuru to Maasai Mara</h4>
                                             <div> <strong>Morning:</strong> Game drive in Lake Nakuru National Park.</div>
                                             <div> <strong>Afternoon:</strong> Drive to Maasai Mara National Reserve.</div>
@@ -647,7 +654,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Maasai Mara Safari</h4>
                                             <div> <strong>Morning:</strong> Game drive in Maasai Mara.</div>
                                             <div> <strong>Afternoon:</strong> Optional visit to a Maasai village.</div>
@@ -661,7 +668,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Maasai Mara to Lake Naivasha</h4>
                                             <div> <strong>Morning:</strong> Final game drive in Maasai Mara.</div>
                                             <div> <strong>Afternoon:</strong> Drive to Lake Naivasha.</div>
@@ -690,7 +697,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Lake Naivasha and Hell's Gate</h4>
                                             <div> <strong>Morning:</strong> Boat ride on Lake Naivasha.</div>
                                             <div> <strong>Afternoon:</strong> Visit Hell's Gate National Park for hiking or cycling.</div>
@@ -704,7 +711,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Nairobi to Mombasa</h4>
                                             <div> <strong>Morning:</strong> Flight to Mombasa.</div>
                                             <div> <strong>Afternoon:</strong> Relax on the beach or explore Fort Jesus.</div>
@@ -735,7 +742,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Free time for last-minute shopping or beach activities.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Moi International Airport in Mombasa for departure or return flight to Nairobi for international departure.</div>
@@ -762,14 +769,14 @@ const Africa = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Zimbabwe 10-day tour</u></h2>
+                                        <h2>Zimbabwe 10-day tour</h2>
                                         <h4>A 10-day tour package in Zimbabwe can offer a rich blend of wildlife safaris, natural wonders, and cultural experiences. Here's a sample itinerary for a 10-day tour package in Zimbabwe:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Harare</h4>
                                             <div> <strong>Morning:</strong> Arrive at Harare International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -799,7 +806,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Harare City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit the National Gallery and Harare Gardens.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Mbare Musika Market.</div>
@@ -812,7 +819,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Harare to Great Zimbabwe</h4>
                                             <div> <strong>Morning:</strong> Drive to Masvingo.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Great Zimbabwe ruins.</div>
@@ -844,7 +851,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Masvingo to Matobo National Park</h4>
                                             <div> <strong>Morning:</strong> Drive to Matobo National Park.</div>
                                             <div> <strong>Afternoon:</strong> Rhino tracking and cave exploration.</div>
@@ -857,7 +864,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Matobo to Hwange National Park</h4>
                                             <div> <strong>Morning:</strong> Drive to Hwange National Park.</div>
                                             <div> <strong>Afternoon:</strong> Game drive in Hwange.</div>
@@ -887,7 +894,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Hwange Safari</h4>
                                             <div> <strong>Morning:</strong> Game drive or walking safari.</div>
                                             <div> <strong>Afternoon:</strong> Visit to a local village or waterhole watching.</div>
@@ -901,7 +908,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Hwange to Victoria Falls</h4>
                                             <div> <strong>Morning:</strong> Drive to Victoria Falls.</div>
                                             <div> <strong>Afternoon:</strong> Visit Victoria Falls.</div>
@@ -931,7 +938,7 @@ const Africa = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Adventure Activities in Victoria Falls</h4>
                                             <div> <strong>Morning:</strong> Optional activities like bungee jumping or white-water rafting.</div>
                                             <div> <strong>Afternoon:</strong> Helicopter ride over the falls or a visit to a crocodile farm.</div>
@@ -945,7 +952,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Victoria Falls to Lake Kariba</h4>
                                             <div> <strong>Morning:</strong> Flight or drive to Lake Kariba.</div>
                                             <div> <strong>Afternoon:</strong> Boat ride or fishing in Lake Kariba.</div>
@@ -977,7 +984,7 @@ const Africa = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Free time for last-minute activities.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Harare International Airport for departure.</div>

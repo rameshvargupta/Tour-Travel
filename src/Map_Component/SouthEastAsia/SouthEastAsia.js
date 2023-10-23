@@ -98,12 +98,20 @@ const SouthEastAsia = () => {
                 </div>
             </div>
 
+            <div className="whatsapplogo">
+                <a target='blank' href='https://wa.me/+917827236346'><img src="./Images/Icon/whatsapp.png" alt="" />
+                </a><div className='whatapptext'>Contact Us</div>
+            </div>
+
             <div className="TopMainImage">
                 <div className="Image">
                     <img className='img-fluid' src="./Images/SouthEastAsia/SeAsiaTop.jpg" alt="" />
                 </div>
 
-                <h1>SOUTH EAST ASIA</h1>
+
+                <div className='countryName'>
+                    <div className='CountryBackground'><h1>SOUTH EAST ASIA</h1></div>
+                </div>
             </div>
 
             <div className="CountryTour">
@@ -218,7 +226,7 @@ const SouthEastAsia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription} onMouseLeave={hideDescription}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Island hopping")} onMouseEnter={showDescription} onMouseLeave={hideDescription}>
 
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/SouthEastAsia/Thailand.jpg" alt="" />
@@ -246,7 +254,7 @@ const SouthEastAsia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Vietnam")} onMouseEnter={showDescription2} onMouseLeave={hideDescription2}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/SouthEastAsia/Vietnam.jpg" alt="" />
                                             </div>
@@ -273,7 +281,7 @@ const SouthEastAsia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Indonesia")} onMouseEnter={showDescription3} onMouseLeave={hideDescription3}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/SouthEastAsia/indonesia.jpg" alt="" />
                                             </div>
@@ -305,7 +313,7 @@ const SouthEastAsia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription5} onMouseLeave={hideDescription5}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Malaysia")} onMouseEnter={showDescription5} onMouseLeave={hideDescription5}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/SouthEastAsia/Malaysia.jpeg" alt="" />
                                             </div>
@@ -335,7 +343,7 @@ const SouthEastAsia = () => {
 
                                     <div className="col-sm-12 col-md-6 col-lg-4 mb-4">
 
-                                        <div className="tourInnerDetails" onMouseEnter={showDescription6} onMouseLeave={hideDescription6}>
+                                        <div className="tourInnerDetails" onClick={() => setSelectDetails("Singapore")} onMouseEnter={showDescription6} onMouseLeave={hideDescription6}>
                                             <div className="CommonTourImage">
                                                 <img className='img-fluid' src="./Images/SouthEastAsia/Singapore.jpg" alt="" />
                                             </div>
@@ -387,7 +395,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 1</u> </h2>
+                                                <h2 > Day 1 </h2>
                                                 <h4>Bangkok Arrival and City Exploration</h4>
                                                 <div> <strong>Morning:</strong> Arrive in Bangkok. Check into your hotel and freshen up</div>
                                                 <div> <strong>Afternoon:</strong> Visit the Grand Palace and the Temple of the Emerald Buddha (Wat Phra Kaew).</div>
@@ -417,7 +425,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 2</u> </h2>
+                                                <h2 > Day 2 </h2>
                                                 <h4>Bangkok to Ayutthaya Day Trip</h4>
                                                 <div> <strong>Morning:</strong> Head to Ayutthaya, the ancient capital of Thailand. Explore Wat Phra Si Sanphet and Wat Mahathat.</div>
                                                 <div> <strong>Afternoon:</strong> Visit Bang Pa-In Summer Palace and enjoy a riverside lunch.</div>
@@ -430,7 +438,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 3</u> </h2>
+                                                <h2 > Day 3 </h2>
                                                 <h4>Bangkok to Chiang Mai</h4>
                                                 <div> <strong>Morning:</strong> Fly to Chiang Mai. Upon arrival, visit the Doi Suthep Temple with panoramic views of the city.</div>
                                                 <div> <strong>Afternoon:</strong>  Wander around the Old City, exploring temples like Wat Chedi Luang</div>
@@ -462,7 +470,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 4</u> </h2>
+                                                <h2 > Day 4 </h2>
                                                 <h4>Chiang Mai Adventures</h4>
 
                                                 <div> <strong>Morning:</strong> Participate in a traditional Thai cooking class, visiting a local market and preparing classic dishes.</div>
@@ -477,7 +485,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 5</u> </h2>
+                                                <h2 > Day 5 </h2>
                                                 <h4>Chiang Mai to Bangkok and Departure</h4>
                                                 <div> <strong>Morning:</strong> Leisure time for last-minute shopping or relaxation.</div>
                                                 <div> <strong>Afternoon:</strong> Fly back to Bangkok. Depending on your departure time, you could explore the MBK Center or Terminal 21 for shopping.</div>
@@ -514,7 +522,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 1</u> </h2>
+                                                <h2 > Day 1 </h2>
                                                 <h4>Bangkok Arrival and City Exploration</h4>
                                                 <div> <strong>Morning:</strong> Arrive in Bangkok. Check into your hotel and relax.</div>
                                                 <div> <strong>Afternoon:</strong> Visit the Grand Palace and Wat Pho (Temple of the Reclining Buddha).</div>
@@ -546,7 +554,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 2</u> </h2>
+                                                <h2 > Day 2 </h2>
                                                 <h4>Bangkok Exploration</h4>
                                                 <div> <strong>Morning:</strong> Take a canal boat tour to explore the city's waterways.</div>
                                                 <div> <strong>Afternoon:</strong> Visit Jim Thompson House and go shopping at MBK or Siam Paragon.</div>
@@ -560,7 +568,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 3</u> </h2>
+                                                <h2 > Day 3 </h2>
                                                 <h4>Bangkok to Ayutthaya Day Trip</h4>
                                                 <div> <strong>Morning:</strong> Travel to Ayutthaya and explore historical sites like Wat Phra Si Sanphet.</div>
                                                 <div> <strong>Afternoon:</strong>Visit Wat Chaiwatthanaram and have a riverside lunch.</div>
@@ -592,7 +600,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 4</u> </h2>
+                                                <h2 > Day 4 </h2>
                                                 <h4>Bangkok to Chiang Mai</h4>
                                                 <div> <strong>Morning:</strong> Fly to Chiang Mai. Visit the Doi Suthep Temple.</div>
                                                 <div> <strong>Afternoon:</strong> Wander around the Old City, exploring temples and historical sites.</div>
@@ -605,7 +613,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 5</u> </h2>
+                                                <h2 > Day 5 </h2>
                                                 <h4>Chiang Mai Adventures</h4>
                                                 <div> <strong>Morning:</strong> Participate in a Thai cooking class, visiting a local market.</div>
                                                 <div> <strong>Afternoon:</strong> Explore the Mae Sa Elephant Camp or an ethical elephant sanctuary.</div>
@@ -637,7 +645,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 6</u> </h2>
+                                                <h2 > Day 6 </h2>
                                                 <h4>Chiang Mai to Phuket/Krabi</h4>
                                                 <div> <strong>Morning:</strong> Fly to Phuket or Krabi.</div>
                                                 <div> <strong>Afternoon:</strong> Relax on the beach or explore local attractions like the Big Buddha in Phuket.</div>
@@ -651,7 +659,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 7</u> </h2>
+                                                <h2 > Day 7 </h2>
                                                 <h4>Island Hopping in Phuket/Krabi</h4>
                                                 <div> <strong>Morning:</strong> Take a boat tour to explore nearby islands like Phi Phi or James Bond Island.</div>
                                                 <div> <strong>Afternoon:</strong> Snorkel in clear waters and relax on pristine beaches.</div>
@@ -691,7 +699,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 1</u> </h2>
+                                                <h2 > Day 1 </h2>
                                                 <h4>Arrival in Phuket</h4>
                                                 <div> <strong>Morning:</strong> Arrive in Phuket. Check into your hotel.</div>
                                                 <div> <strong>Afternoon:</strong> Explore Phuket Town, with its colorful buildings and markets.</div>
@@ -723,7 +731,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 2</u> </h2>
+                                                <h2 > Day 2 </h2>
                                                 <h4>Phuket Exploration</h4>
                                                 <div> <strong>Morning:</strong> Visit the Big Buddha and Wat Chalong.</div>
                                                 <div> <strong>Afternoon:</strong> Relax on Kata or Karon Beach.</div>
@@ -737,7 +745,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 3</u> </h2>
+                                                <h2 > Day 3 </h2>
                                                 <h4>Phuket to Phi Phi Islands</h4>
                                                 <div> <strong>Morning:</strong> Depart for Phi Phi Islands.</div>
                                                 <div> <strong>Afternoon:</strong> Visit Maya Bay, Loh Samah Bay, and Pileh Lagoon.</div>
@@ -770,7 +778,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 4</u> </h2>
+                                                <h2 > Day 4 </h2>
                                                 <h4>Phi Phi to Krabi</h4>
                                                 <div> <strong>Morning:</strong>  Snorkeling around Phi Phi's coral gardens.</div>
                                                 <div> <strong>Afternoon:</strong> Depart for Krabi. Check into your hotel in Ao Nang.</div>
@@ -783,7 +791,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 5</u> </h2>
+                                                <h2 > Day 5 </h2>
                                                 <h4>Four Islands Tour from Krabi</h4>
                                                 <div> <strong>Morning:</strong> Boat tour to Phra Nang Cave Beach, Tup Island, Chicken Island, and Poda Island.</div>
                                                 <div> <strong>Afternoon:</strong> Snorkeling and beach relaxation.</div>
@@ -816,7 +824,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 6</u> </h2>
+                                                <h2 > Day 6 </h2>
                                                 <h4>Krabi to Koh Lanta</h4>
                                                 <div> <strong>Morning:</strong> Travel to Koh Lanta.</div>
                                                 <div> <strong>Afternoon:</strong> Chill at Long Beach.</div>
@@ -830,7 +838,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 7</u> </h2>
+                                                <h2 > Day 7 </h2>
                                                 <h4>Koh Lanta Exploration</h4>
                                                 <div> <strong>Morning:</strong> Visit Mu Ko Lanta National Park.</div>
                                                 <div> <strong>Afternoon:</strong> Snorkeling trip to Koh Rok.</div>
@@ -860,7 +868,7 @@ const SouthEastAsia = () => {
                                         <div className="col-sm-12 col-lg-6 mb-4">
 
                                             <div className="CommonTripDetails">
-                                                <h2 > <u>Day 8</u> </h2>
+                                                <h2 > Day 8 </h2>
                                                 <h4>Koh Lanta to Koh Phi Phi</h4>
                                                 <div> <strong>Morning:</strong> Koh Lanta to Koh Phi Phi</div>
                                                 <div> <strong>Afternoon:</strong> Explore the viewpoints of Phi Phi for panoramic island views.</div>
@@ -876,7 +884,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 9</u> </h2>
+                                                <h2 > Day 9 </h2>
                                                 <h4>Koh Phi Phi to Phuket</h4>
                                                 <div> <strong>Morning:</strong> Relax on Bamboo Island near Phi Phi.</div>
                                                 <div> <strong>Afternoon:</strong> Return to Phuket and indulge in some shopping or spa treatments.</div>
@@ -908,7 +916,7 @@ const SouthEastAsia = () => {
 
                                             <div className="CommonTripDetails">
 
-                                                <h2 > <u>Day 10</u> </h2>
+                                                <h2 > Day 10 </h2>
                                                 <h4>Departure from Phuket</h4>
                                                 <div> <strong>Morning:</strong> Last-minute shopping or relaxation at the beach.</div>
                                                 <div> <strong>Afternoon:</strong> Departure from Phuket's airport.</div>
@@ -933,14 +941,14 @@ const SouthEastAsia = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Vietnam Discovery</u></h2>
+                                        <h2>Vietnam Discovery</h2>
                                         <h4>A 10-day tour of Vietnam can offer a rich blend of cultural, historical, and natural experiences. Here's a sample itinerary for a 10-day tour package in Vietnam:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Hanoi</h4>
                                             <div> <strong>Morning:</strong> Arrive at Noi Bai International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -971,7 +979,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Hanoi City Tour</h4>
                                             <div> <strong>Morning:</strong> Visit Ho Chi Minh Mausoleum and One Pillar Pagoda.</div>
                                             <div> <strong>Afternoon:</strong> Relax on Kata or Karon Beach.</div>
@@ -984,7 +992,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Halong Bay Cruise</h4>
                                             <div> <strong>Morning:</strong> Depart for Halong Bay.</div>
                                             <div> <strong>Afternoon:</strong> Board a cruise, explore limestone caves.</div>
@@ -1016,7 +1024,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Halong Bay to Hanoi</h4>
                                             <div> <strong>Morning:</strong>  Continue cruising, participate in a Tai Chi session.</div>
                                             <div> <strong>Afternoon:</strong> Return to Hanoi.</div>
@@ -1028,7 +1036,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Fly to Hue</h4>
                                             <div> <strong>Morning:</strong> Flight to Hue.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Imperial City and Thien Mu Pagoda.</div>
@@ -1058,7 +1066,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Hue to Hoi An</h4>
                                             <div> <strong>Morning:</strong> Visit the Royal Tombs.</div>
                                             <div> <strong>Afternoon:</strong> Drive to Hoi An via Hai Van Pass.</div>
@@ -1071,7 +1079,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Hoi An Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit My Son Sanctuary.</div>
                                             <div> <strong>Afternoon:</strong> Cooking class or leisure time at An Bang Beach.</div>
@@ -1100,7 +1108,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Fly to Ho Chi Minh City (Saigon)</h4>
                                             <div> <strong>Morning:</strong> Flight to Ho Chi Minh City.</div>
                                             <div> <strong>Afternoon:</strong> Visit the War Remnants Museum and Notre Dame Cathedral.</div>
@@ -1115,7 +1123,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Mekong Delta Day Trip</h4>
                                             <div> <strong>Morning:</strong> Depart for Mekong Delta.</div>
                                             <div> <strong>Afternoon:</strong> Boat tour, visit local villages.</div>
@@ -1146,7 +1154,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Cu Chi Tunnels and Departure</h4>
                                             <div> <strong>Morning:</strong> Visit Cu Chi Tunnels.</div>
                                             <div> <strong>Afternoon:</strong> Last-minute shopping or sightseeing.</div>
@@ -1173,14 +1181,14 @@ const SouthEastAsia = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Indonesia Explorer</u></h2>
+                                        <h2>Indonesia Explorer</h2>
                                         <h4>Indonesia is a vast country with a rich tapestry of cultures, landscapes, and activities. A 10-day tour can give you a taste of some of the best the country has to offer. Here's a sample itinerary for a 10-day tour package in Indonesia:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Jakarta</h4>
                                             <div> <strong>Morning:</strong> Arrive at Soekarno-Hatta International Airport, transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -1210,7 +1218,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Jakarta to Yogyakarta</h4>
                                             <div> <strong>Morning:</strong> Flight to Yogyakarta.</div>
                                             <div> <strong>Afternoon:</strong> Visit Prambanan Temple.</div>
@@ -1223,7 +1231,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Yogyakarta Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit the Sultan's Palace (Kraton).</div>
                                             <div> <strong>Afternoon:</strong> Explore Borobudur Temple.</div>
@@ -1255,7 +1263,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Yogyakarta to Bali</h4>
                                             <div> <strong>Morning:</strong> Flight to Bali.</div>
                                             <div> <strong>Afternoon:</strong> Visit Tanah Lot Temple.</div>
@@ -1267,7 +1275,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Bali Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit Ubud Monkey Forest.</div>
                                             <div> <strong>Afternoon:</strong> Explore Tegallalang Rice Terraces.</div>
@@ -1297,7 +1305,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Bali Beach Day</h4>
                                             <div> <strong>Morning:</strong> Relax at Nusa Dua Beach.</div>
                                             <div> <strong>Afternoon:</strong> Water sports activities.</div>
@@ -1311,7 +1319,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Bali to Komodo Island</h4>
                                             <div> <strong>Morning:</strong> Flight to Labuan Bajo.</div>
                                             <div> <strong>Afternoon:</strong> Boat trip to Komodo Island.</div>
@@ -1340,7 +1348,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Komodo Island to Labuan Bajo</h4>
                                             <div> <strong>Morning:</strong> Komodo dragon trekking.</div>
                                             <div> <strong>Afternoon:</strong> Snorkeling at Pink Beach.</div>
@@ -1354,7 +1362,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Labuan Bajo to Bali</h4>
                                             <div> <strong>Morning:</strong> Flight back to Bali.</div>
                                             <div> <strong>Afternoon:</strong> Visit Uluwatu Temple.</div>
@@ -1385,7 +1393,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Departure</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping or beach time.</div>
                                             <div> <strong>Afternoon:</strong> Transfer to Ngurah Rai International Airport for departure.</div>
@@ -1411,14 +1419,14 @@ const SouthEastAsia = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Malaysia Getaway</u></h2>
+                                        <h2>Malaysia Getaway</h2>
                                         <h4>Malaysia offers a unique blend of modernity, rich cultural heritage, and stunning natural attractions.</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival in Kuala Lumpur</h4>
                                             <div> <strong>Morning:</strong> Arrive in Kuala Lumpur (KL). Check into your hotel.</div>
                                             <div> <strong>Afternoon:</strong> Explore the iconic Petronas Twin Towers and take in the city view from the observation deck.</div>
@@ -1449,7 +1457,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>Kuala Lumpur Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit Batu Caves, a Hindu temple complex.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Sultan Abdul Samad Building and Merdeka Square.</div>
@@ -1463,7 +1471,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Kuala Lumpur to Penang</h4>
                                             <div> <strong>Morning:</strong> Travel to Penang (by flight or road).</div>
                                             <div> <strong>Afternoon:</strong> Wander around George Town, a UNESCO World Heritage site.</div>
@@ -1496,7 +1504,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Penang Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit Kek Lok Si Temple and Penang Hill.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Pinang Peranakan Mansion and Fort Cornwallis.</div>
@@ -1510,7 +1518,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Penang to Langkawi</h4>
                                             <div> <strong>Morning:</strong> Travel to Langkawi (by ferry or flight).</div>
                                             <div> <strong>Afternoon:</strong> Relax at Pantai Cenang Beach.</div>
@@ -1541,7 +1549,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Langkawi Island Hopping</h4>
                                             <div> <strong>Morning:</strong> Island hopping tour to Pulau Dayang Bunting, Pulau Singa Besar, and Pulau Beras Basah.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Underwater World Langkawi.</div>
@@ -1556,7 +1564,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Langkawi to the Cameron Highlands</h4>
                                             <div> <strong>Morning:</strong> Travel to the Cameron Highlands.</div>
                                             <div> <strong>Afternoon:</strong> Visit tea plantations and enjoy a factory tour.</div>
@@ -1587,7 +1595,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Cameron Highlands Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit the Cameron Lavender Garden and Butterfly Garden.</div>
                                             <div> <strong>Afternoon:</strong> Explore the local market and try fresh strawberries.</div>
@@ -1602,7 +1610,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Cameron Highlands to Kuala Lumpur</h4>
                                             <div> <strong>Morning:</strong> Travel back to KL.</div>
                                             <div> <strong>Afternoon:</strong> Visit the Islamic Arts Museum Malaysia and KL Bird Park.</div>
@@ -1635,7 +1643,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Departure from Kuala Lumpur</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping at Pavilion KL or Suria KLCC.</div>
                                             <div> <strong>Afternoon:</strong> Departure from Kuala Lumpur International Airport.</div>
@@ -1661,14 +1669,14 @@ const SouthEastAsia = () => {
                                 <div className="row">
 
                                     <div className="maintopic">
-                                        <h2><u>Singapore and Beyond</u></h2>
+                                        <h2>Singapore and Beyond</h2>
                                         <h4>A 10-day tour in Singapore allows you to explore the city-state in depth. Here's a detailed itinerary broken down into morning, afternoon, and evening activities for each day:</h4>
                                     </div>
 
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 1</u> </h2>
+                                            <h2 > Day 1 </h2>
                                             <h4>Arrival and Orientation</h4>
                                             <div> <strong>Morning:</strong> Arrival at Changi Airport. Transfer to hotel.</div>
                                             <div> <strong>Afternoon:</strong> Rest and recover from jet lag.</div>
@@ -1698,7 +1706,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 2</u> </h2>
+                                            <h2 > Day 2 </h2>
                                             <h4>City Highlights</h4>
                                             <div> <strong>Morning:</strong> Visit Merlion Park and take photos.</div>
                                             <div> <strong>Afternoon:</strong> Ride the Singapore Flyer.</div>
@@ -1711,7 +1719,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 3</u> </h2>
+                                            <h2 > Day 3 </h2>
                                             <h4>Sentosa Island</h4>
                                             <div> <strong>Morning:</strong> Take Sentosa Express to Sentosa Island.</div>
                                             <div> <strong>Afternoon:</strong> Visit Universal Studios Singapore.</div>
@@ -1743,7 +1751,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 4</u> </h2>
+                                            <h2 > Day 4 </h2>
                                             <h4>Cultural Exploration</h4>
                                             <div> <strong>Morning:</strong> Visit Chinatown and the Buddha Tooth Relic Temple.</div>
                                             <div> <strong>Afternoon:</strong> Explore Little India.</div>
@@ -1756,7 +1764,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 5</u> </h2>
+                                            <h2 > Day 5 </h2>
                                             <h4>Nature and Wildlife</h4>
                                             <div> <strong>Morning:</strong> Visit Singapore Zoo.</div>
                                             <div> <strong>Afternoon:</strong> Go to the River Safari.</div>
@@ -1786,7 +1794,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 6</u> </h2>
+                                            <h2 > Day 6 </h2>
                                             <h4>Gardens and Parks</h4>
                                             <div> <strong>Morning:</strong> Visit the Botanic Gardens.</div>
                                             <div> <strong>Afternoon:</strong> Explore Gardens by the Bay.</div>
@@ -1800,7 +1808,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 7</u> </h2>
+                                            <h2 > Day 7 </h2>
                                             <h4>Shopping and Food</h4>
                                             <div> <strong>Morning:</strong> Shop at Orchard Road.</div>
                                             <div> <strong>Afternoon:</strong> Visit VivoCity Mall.</div>
@@ -1830,7 +1838,7 @@ const SouthEastAsia = () => {
                                     <div className="col-sm-12 col-md-6 col-lg-6 mb-4">
 
                                         <div className="CommonTripDetails">
-                                            <h2 > <u>Day 8</u> </h2>
+                                            <h2 > Day 8 </h2>
                                             <h4>Art and History</h4>
                                             <div> <strong>Morning:</strong> Visit the National Gallery Singapore.</div>
                                             <div> <strong>Afternoon:</strong> Explore the Asian Civilisations Museum.</div>
@@ -1844,7 +1852,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 9</u> </h2>
+                                            <h2 > Day 9 </h2>
                                             <h4>Off the Beaten Path</h4>
                                             <div> <strong>Morning:</strong> Take a bumboat to Pulau Ubin.</div>
                                             <div> <strong>Afternoon:</strong> Cycling or trekking on Pulau Ubin.</div>
@@ -1876,7 +1884,7 @@ const SouthEastAsia = () => {
 
                                         <div className="CommonTripDetails">
 
-                                            <h2 > <u>Day 10</u> </h2>
+                                            <h2 > Day 10 </h2>
                                             <h4>Last-Minute Shopping and Departure</h4>
                                             <div> <strong>Morning:</strong> Last-minute shopping at Mustafa Centre.</div>
                                             <div> <strong>Afternoon:</strong> Visit Jewel Changi Airport.</div>
